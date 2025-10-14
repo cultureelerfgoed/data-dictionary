@@ -1,0 +1,103 @@
+article.csv-table {    
+    background-color: white;  
+}
+
+section.sticky {
+    width: 100%;
+    max-height: calc(100vh - 170px);
+    overflow: scroll;
+    scroll-snap-type: y mandatory
+}
+
+section.sticky th,
+section.sticky td {
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-family: Arial;
+}
+
+section.sticky th {
+    border-bottom: solid #c3c7cb 2px;
+    border-right: solid #edeef0 1px;
+    background: #edeef0;
+
+}
+
+section.sticky td {
+    border-bottom: solid #edeef0 1px;
+    border-right: solid #edeef0 1px;   
+}
+
+section.sticky tr {
+    scroll-snap-align: start;
+}
+
+section.sticky tr th:first-child,
+section.sticky td:first-child {
+    position: sticky;
+    width: 100px;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    border-right: solid #c3c7cb 2px;
+    background: #edeef0;
+}
+
+section.sticky tr th:first-child {
+    z-index: 11;
+}
+
+section.sticky tr th {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+button[download] {
+    width: 32px;   
+    background: transparent url("../icons/filetype-csv.svg") no-repeat center;
+    background-color: #F8F8F8;
+    border: 1px solid #555;
+    margin-left: auto;
+}
+
+button[csv-file] {
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button[csv-file], button[download] {
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+button[csv-file]:hover, button[download]:hover {
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+}
+
+button[csv-file]:active, button[download]:active {
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+}
+
+button[csv-file][selected]:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #555;
+}
+
+button[csv-file][selected] {
+    background-color: #F8F8F8;
+    border: 1px solid #555;
+}
+
+article.csv-table nav {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
