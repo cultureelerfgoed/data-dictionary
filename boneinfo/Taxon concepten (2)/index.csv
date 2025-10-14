@@ -1,0 +1,22 @@
+kolom_naam;record_aantal;tabel_naam;aantal_veldwaarden_met_null;aantal_lege_veldwaarde;aantal_veldwaarden_met_lege_lijst;totaal_aantal_veldwaarden;aantal_uunieke_veldwaarden;percentage_unieke_veldwaarden;kolom_is_leeg;veldwaarde_is_uuid;veldwaarde_is_url;veldwaarde_is_email;veldwaarde_is_int;veldwaarde_is_float;veldwaarde_is_bool;veldwaarde_is_dict;veldwaarde_bevat_html;veldwaarde_is_date;veldwaarde_is_str;aantal_decimalen;grootste_int_waarde;langste_str_waarde;primaire_sleutel;vreemde_sleutel;gerelateerde_tabel_naam;gerelateerde_kolom_naam
+Id;28805;Taxon concepten (2);0;0;0;28805;28805;1.0;False;0;0;0;28805;0;0;0;0;0;0;0;5;0;false;false;;
+wetenschappelijke_naam;28805;Taxon concepten (2);0;0;0;28805;28803;1.0;False;0;0;0;0;0;0;0;0;0;28805;0;0;84;false;false;;
+uninomial;28805;Taxon concepten (2);0;0;0;28802;9543;0.33;False;0;0;0;0;0;0;0;0;0;28802;0;0;29;false;false;;
+specific_epithet;28805;Taxon concepten (2);0;0;0;28802;14605;0.51;False;0;0;0;0;0;0;0;0;0;28802;0;0;23;false;false;;
+infra_specific_epithet;28805;Taxon concepten (2);0;0;0;582;562;0.97;False;0;0;0;0;0;0;0;0;0;582;0;0;18;false;false;;
+soortnaam;28805;Taxon concepten (2);0;0;0;28805;28193;0.98;False;0;0;0;0;0;0;0;0;0;28805;0;0;36;false;false;;
+soortnaam2;28805;Taxon concepten (2);0;0;0;28805;28774;1.0;False;0;0;0;0;0;0;0;0;0;28805;0;0;46;false;false;;
+authorship;28805;Taxon concepten (2);0;0;0;28760;9532;0.33;False;0;0;0;0;0;0;0;0;1;28759;0;0;62;false;false;;
+nederlandse_naam;28805;Taxon concepten (2);0;0;0;7520;7429;0.99;False;0;0;0;0;0;0;0;0;0;7520;0;0;40;false;false;;
+rang;28805;Taxon concepten (2);0;0;0;28805;4;0.0;False;0;0;0;0;0;0;0;0;0;28805;0;0;10;false;false;;
+nsr_id;28805;Taxon concepten (2);0;0;0;28805;28805;1.0;False;0;0;0;1708;0;0;2;0;2;27093;0;11;14;false;false;;
+voorkomen_status;28805;Taxon concepten (2);0;0;0;28771;16;0.0;False;0;0;0;3290;0;0;0;0;22215;3266;0;1;4;false;false;;
+habitat;28805;Taxon concepten (2);0;0;0;28458;11;0.0;False;0;0;0;0;0;0;0;0;0;28458;0;0;16;false;false;;
+concept_url;28805;Taxon concepten (2);0;0;0;28805;28805;1.0;False;0;28805;0;0;0;0;0;0;0;0;0;0;57;false;false;;
+rijk;28805;Taxon concepten (2);0;0;0;28805;1;0.0;False;0;0;0;0;0;0;0;0;0;28805;0;0;8;false;false;;
+phylum;28805;Taxon concepten (2);0;0;0;28805;26;0.0;False;0;0;0;0;0;0;0;0;0;28805;0;0;15;false;false;;
+klasse;28805;Taxon concepten (2);0;0;0;28792;69;0.0;False;0;0;0;0;0;0;0;0;0;28792;0;0;19;false;false;;
+orde;28805;Taxon concepten (2);0;0;0;28754;298;0.01;False;0;0;0;0;0;0;0;0;0;28754;0;0;27;false;false;;
+familie;28805;Taxon concepten (2);0;0;0;28805;1818;0.06;False;0;0;0;0;0;0;0;0;0;28805;0;0;47;false;false;;
+genus;28805;Taxon concepten (2);0;0;0;28805;9546;0.33;False;0;0;0;0;0;0;0;0;0;28805;0;0;75;false;false;;
+species;28805;Taxon concepten (2);0;0;0;612;500;0.82;False;0;0;0;0;0;0;0;0;0;612;0;0;56;false;false;;

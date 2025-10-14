@@ -1,0 +1,16 @@
+kolom_naam;record_aantal;tabel_naam;aantal_veldwaarden_met_null;aantal_lege_veldwaarde;aantal_veldwaarden_met_lege_lijst;totaal_aantal_veldwaarden;aantal_uunieke_veldwaarden;percentage_unieke_veldwaarden;kolom_is_leeg;veldwaarde_is_uuid;veldwaarde_is_url;veldwaarde_is_email;veldwaarde_is_int;veldwaarde_is_float;veldwaarde_is_bool;veldwaarde_is_dict;veldwaarde_bevat_html;veldwaarde_is_date;veldwaarde_is_str;aantal_decimalen;grootste_int_waarde;langste_str_waarde;primaire_sleutel;vreemde_sleutel;gerelateerde_tabel_naam;gerelateerde_kolom_naam
+diersoortID;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;681;0.89;False;0;0;0;766;0;0;0;0;0;0;0;4;0;false;false;;
+lat_omschrijving;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;681;0.89;False;0;0;0;0;0;0;0;0;0;766;0;0;28;false;false;;
+soortnaam2;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;766;1.0;False;0;0;0;0;0;0;0;0;0;766;0;0;40;false;false;;
+Kingdom;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;0;0;;True;0;0;0;0;0;0;0;0;0;0;0;0;4;false;false;;
+rijk;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;1;0.0;False;0;0;0;0;0;0;0;0;0;766;0;0;8;false;false;;
+TblDiersoort_phylum;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;0;0;;True;0;0;0;0;0;0;0;0;0;0;0;0;4;false;false;;
+Taxon concepten (2)_phylum;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;8;0.01;False;0;0;0;0;0;0;0;0;0;766;0;0;15;false;false;;
+class;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;615;13;0.02;False;0;0;0;0;0;0;0;0;0;615;0;0;14;false;false;;
+klasse;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;20;0.03;False;0;0;0;0;0;0;0;0;0;766;0;0;14;false;false;;
+order;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;615;70;0.11;False;0;0;0;0;0;0;0;0;0;615;0;0;18;false;false;;
+orde;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;84;0.11;False;0;0;0;0;0;0;0;0;0;766;0;0;20;false;false;;
+family;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;615;220;0.36;False;0;0;0;0;0;0;0;0;0;615;0;0;17;false;false;;
+familie;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;261;0.34;False;0;0;0;0;0;0;0;0;0;766;0;0;26;false;false;;
+genus;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;615;391;0.64;False;0;0;0;0;0;0;0;0;0;615;0;0;16;false;false;;
+uninomial;766;Tabel TblDiersoort_taxonlijst Naturalis_soort;0;0;0;766;491;0.64;False;0;0;0;0;0;0;0;0;0;766;0;0;16;false;false;;

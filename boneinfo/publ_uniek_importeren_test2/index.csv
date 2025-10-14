@@ -1,0 +1,17 @@
+kolom_naam;record_aantal;tabel_naam;aantal_veldwaarden_met_null;aantal_lege_veldwaarde;aantal_veldwaarden_met_lege_lijst;totaal_aantal_veldwaarden;aantal_uunieke_veldwaarden;percentage_unieke_veldwaarden;kolom_is_leeg;veldwaarde_is_uuid;veldwaarde_is_url;veldwaarde_is_email;veldwaarde_is_int;veldwaarde_is_float;veldwaarde_is_bool;veldwaarde_is_dict;veldwaarde_bevat_html;veldwaarde_is_date;veldwaarde_is_str;aantal_decimalen;grootste_int_waarde;langste_str_waarde;primaire_sleutel;vreemde_sleutel;gerelateerde_tabel_naam;gerelateerde_kolom_naam
+Publicatienr;1765;publ_uniek_importeren_test2;0;0;0;1765;1765;1.0;False;0;0;0;0;1765;0;0;0;0;0;1;4;0;false;false;;
+Auteur 1;1765;publ_uniek_importeren_test2;0;0;0;1765;332;0.19;False;0;0;0;0;0;0;0;0;0;1765;0;0;28;false;false;;
+Auteur 2;1765;publ_uniek_importeren_test2;0;0;0;421;170;0.4;False;0;0;0;0;0;0;0;0;0;421;0;0;32;false;false;;
+Auteur 3;1765;publ_uniek_importeren_test2;0;0;0;154;88;0.57;False;0;0;0;0;0;0;0;0;0;154;0;0;28;false;false;;
+Auteur 4;1765;publ_uniek_importeren_test2;0;0;0;56;38;0.68;False;0;0;0;0;0;0;0;0;0;56;0;0;21;false;false;;
+Auteur 5;1765;publ_uniek_importeren_test2;0;0;0;21;20;0.95;False;0;0;0;0;0;0;0;0;0;21;0;0;20;false;false;;
+Meer dan 5 auteurs;1765;publ_uniek_importeren_test2;0;0;0;1765;2;0.0;False;0;0;0;0;0;1765;0;0;0;0;0;0;0;false;false;;
+Overige auteurs;1765;publ_uniek_importeren_test2;0;0;0;15;5;0.33;False;0;0;0;0;0;0;0;0;0;15;0;0;57;false;false;;
+Redactie;1765;publ_uniek_importeren_test2;0;0;0;33;1;0.03;False;0;0;0;0;0;0;0;0;0;33;0;0;4;false;false;;
+Jaar;1765;publ_uniek_importeren_test2;0;0;0;1762;58;0.03;False;0;0;0;0;1762;0;0;0;0;0;1;4;4;false;false;;
+Artikel_titel;1765;publ_uniek_importeren_test2;0;254;0;1764;1313;0.74;False;0;0;0;0;0;0;0;0;0;1510;0;0;254;false;false;;
+Boektitel;1765;publ_uniek_importeren_test2;0;820;0;1765;846;0.48;False;0;0;0;0;0;0;0;0;0;945;0;0;255;false;false;;
+Periodiek;1765;publ_uniek_importeren_test2;0;42;0;1765;183;0.1;False;0;0;0;0;0;0;0;0;0;1723;0;0;78;false;false;;
+Deel;1765;publ_uniek_importeren_test2;0;413;0;1764;781;0.44;False;0;0;0;882;20;0;0;0;112;337;4;8;50;false;false;;
+PDF;1765;publ_uniek_importeren_test2;0;0;0;1765;2;0.0;False;0;0;0;0;0;1765;0;0;0;0;0;0;0;false;false;;
+Bibliotheek plaatsingscode;1765;publ_uniek_importeren_test2;0;0;0;0;0;;True;0;0;0;0;0;0;0;0;0;0;0;0;4;false;false;;

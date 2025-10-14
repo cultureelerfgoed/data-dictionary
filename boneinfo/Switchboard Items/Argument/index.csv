@@ -1,0 +1,5 @@
+;1
+FrmTblZoo_cluster;2
+Openen RptControleFile clstnr <32 (15) temp;1
+Opslaan_cluster_als_rapport;1
+Standaard;1
