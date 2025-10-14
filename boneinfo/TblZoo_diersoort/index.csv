@@ -1,0 +1,19 @@
+kolom_naam;record_aantal;tabel_naam;aantal_veldwaarden_met_null;aantal_lege_veldwaarde;aantal_veldwaarden_met_lege_lijst;totaal_aantal_veldwaarden;aantal_uunieke_veldwaarden;percentage_unieke_veldwaarden;kolom_is_leeg;veldwaarde_is_uuid;veldwaarde_is_url;veldwaarde_is_email;veldwaarde_is_int;veldwaarde_is_float;veldwaarde_is_bool;veldwaarde_is_dict;veldwaarde_bevat_html;veldwaarde_is_date;veldwaarde_is_str;aantal_decimalen;grootste_int_waarde;langste_str_waarde;primaire_sleutel;vreemde_sleutel;gerelateerde_tabel_naam;gerelateerde_kolom_naam
+id;33056;TblZoo_diersoort;0;0;0;33056;33056;1.0;False;0;0;0;33056;0;0;0;0;0;0;0;5;0;false;true;TblZoo_diersoort_grafs;DiersoortID
+Zoonr;33056;TblZoo_diersoort;0;0;0;33056;2860;0.09;False;0;0;0;33056;0;0;0;0;0;0;0;4;0;false;true;TblZoo_cluster;Zoonr
+Volgnr;33056;TblZoo_diersoort;0;0;0;33056;201;0.01;False;0;0;0;33056;0;0;0;0;0;0;0;3;0;false;false;;
+SoortID;33056;TblZoo_diersoort;0;0;0;33036;1220;0.04;False;0;0;0;33036;0;0;0;0;0;0;0;4;4;false;true;TblSoort;SoortID
+Eigen_invoer_nieuwe_soort;33056;TblZoo_diersoort;0;2;0;16;11;0.69;False;0;0;0;0;0;0;0;0;0;14;0;0;42;false;false;;
+Zekerheid;33056;TblZoo_diersoort;0;1;0;35;5;0.14;False;0;0;0;0;0;0;0;0;0;34;0;0;5;false;true;Tbl_Zekerhe;zekerheid
+Aantal;33056;TblZoo_diersoort;0;0;0;4223;351;0.08;False;0;0;0;4223;0;0;0;0;0;0;0;5;4;false;false;;
+Artefacten_gevonden;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Leeftijdsgegevens_beschikbaar;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Maten_beschikbaar;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Bewerkingssporen_beschikbaar;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Geslachtskenmerken_beschikbaar;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Pathologie n_beschikbaar;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Aanvullend_onderzoek;33056;TblZoo_diersoort;0;1;0;14;3;0.21;False;0;0;0;0;0;0;0;0;0;13;0;0;35;false;true;Tbl_AanvullendOnderzoek;ID
+Monsters_genomen_maar_nog_niet_geanalyseerd;33056;TblZoo_diersoort;0;1;0;2;2;1.0;False;0;0;0;0;0;0;0;0;0;1;0;0;30;false;false;;
+Speciale_depositie/graf;33056;TblZoo_diersoort;0;0;0;33056;2;0.0;False;0;0;0;0;0;33056;0;0;0;0;0;0;0;false;false;;
+Toelichting;33056;TblZoo_diersoort;0;2;0;887;588;0.66;False;0;0;0;0;0;0;0;0;0;885;0;0;255;false;false;;
+DepositienrList;33056;TblZoo_diersoort;0;0;0;0;0;;True;0;0;0;0;0;0;0;0;0;0;0;0;4;false;false;;
