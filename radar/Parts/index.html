@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dictionary</title>
+    <link rel="stylesheet" href="/data-dictionary/assets/styles/layout.css">
+    <link rel="stylesheet" href="/data-dictionary/assets/styles/csv-table.css">
+    <link rel="stylesheet" href="/data-dictionary/assets/styles/csv-list.css">
+</head>
+<body>
+    <header>
+        <a href="/">
+          <div class="logo">
+                <div class="wrapper">
+                    <img src="/data-dictionary/assets/images/logo_cultureelerfgoed.svg" alt="Logo Rijksdienst voor het Cultureel Erfgoed - Ministerie van Onderwijs, Cultuur en Wetenschap - Naar de homepage van cultureelerfgoed.nl" id="logotype">
+                </div>
+            </div>
+        </a>
+    </header>
+    <nav class="breadCrumbNav">
+        <span class="assistive" id="breadCrumbNavLabel">U bevindt zich hier:</span>
+                <a href="/">Data Dictionary</a>
+        <a href="/data-dictionary/radar/"><span aria-current="page">radar</span></a>
+        <a href="/data-dictionary/radar/Parts"><span aria-current="page">Parts</span></a>
+    </nav>
+    <div class="container">
+        <aside>
+            <nav filter-list="data">
+                <input type="search" search placeholder="Type to search.....">
+            </nav>
+            <ul class="filter-list" filter-list="data">
+                <li h1><a href="/data-dictionary/boneinfo/">boneinfo</a><span>38</span></li>
+
+<li h1><a href="/data-dictionary/radar/">radar</a><span>31</span></li>
+
+    <li h2><a href="/data-dictionary/radar/Parts">Parts</a><span>3</span></li>
+    
+        <li h3><a href="/data-dictionary/radar/Parts/Partpreserved">Partpreserved</a><span>94</span></li>
+    
+        <li h3><a href="/data-dictionary/radar/Parts/Description">Description</a><span>94</span></li>
+    
+
+
+            </ul>
+        </aside>
+        <main style="max-width: 100%;">
+            <!--<header>main header</header>-->          
+                        <article class="csv-table">
+                <header>
+                    <h1>Parts</h1>
+                </header>
+                <nav>
+                    <button csv-file="/data-dictionary/radar/Parts/index.csv" selected>tabel</button>
+                    <button csv-file="/data-dictionary/radar/Parts/index_pg.csv">infoschema-table</button>
+                    <button download="" title="download csv bestand"></button>
+                </nav>
+                <section class="sticky">
+                    <table csv-file=""></table>
+                </section>
+                <footer></footer>
+            </article>
+            <!--<footer>main footer</footer>-->
+        </main> 
+    </div>
+    <!--<footer>footer</footer>-->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+    <script src="/data-dictionary/assets/scripts/csv-table.js"></script>
+    <script src="/data-dictionary/assets/scripts/csv-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+(catkin) cone or -scale;1
+(flower) head;1
+(fruit) stalk;1
+(rachis) internode (1 or more);1
+(rachis) internode segment (1);1
+anthere;1
+apex;1
+awn(s) or -fragments;1
+bark;1
+bread;1
+bud (-scale);1
+calyx;1
+calyx base (Pyrus);1
+carpel;1
+catkin (Alnus);1
+chaff (unspecified);1
+cone (Betulaceae, Pinus);1
+cotyledon;1
+cotyledon fragment;1
+culm;1
+culm node;1
+culm-rachis transition;1
+cupula;1
+ear (base);1
+embryo;1
+empty spikelet;1
+endocarp (Malus);1
+endosperm;1
+epidermis;1
+fibre, vezel;1
+floret (base);1
+floret plus seed/grain;1
+flower;1
+flower base (Ribes);1
+fragment(s);1
+fruit apex;1
+fruit base;1
+fruit epidermis fragment;1
+fruit, capsule, silicle, pod;1
+germinated seed/coleoptiel;1
+glume;1
+glume apex;1
+glume base;1
+grain from top ear;1
+grain in spikelet;1
+hilum;1
+impression;1
+inflorescence;1
+involucral bract;1
+leaf;1
+lemma (base);1
+lid of Potamogeton (cf Aalto);1
+lodiculae;1
+lump;1
+megaspore;1
+needle (naald);1
+nut shell;1
+oil cell(s);1
+oogonium/oospore;1
+pappus (hairs);1
+parchment (Coffea);1
+parenchyma;1
+pedicel;1
+peel;1
+perianth/perigon;1
+pollen;1
+processed food fragment;1
+rachilate spikelet (Triticum);1
+rachilla;1
+rachis base, stem/rachis trans;1
+rachis fragment (>1 internode);1
+rachis lax-eared;1
+root/tuber/rhizome;1
+sclerenchym spindle;1
+sclerotium (Claviceps);1
+seed s.l.;1
+spermoderm;1
+spikelet fork;1
+spikelet fork or glume base;1
+spine/thorn;1
+sporangium;1
+spur on fruit spine (Trapa);1
+stem;1
+stem base;1
+stone cells;1
+suberized leaf scar;1
+testa (fragments);1
+tuber;1
+turion;1
+twig;1
+umbilicus Fabaceae;1
+unknown;1
+unripe/underdeveloped seeds;1
+utricle;1
