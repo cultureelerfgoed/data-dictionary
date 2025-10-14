@@ -1,0 +1,40 @@
+table_catalog;table_schema;table_name;table_type;self_referencing_column_name;reference_generation;user_defined_type_catalog;user_defined_type_schema;user_defined_type_name;is_insertable_into;is_typed;commit_action
+gdm-bron-db;boneinfo;Paste Errors;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Switchboard Items;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Name AutoCorrect Save Failures;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Opslagfouten bij automatische naamcorrectie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Tabel TblDiersoort_taxonlijst Naturalis_soort;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Taxon concepten (2);BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblAuteur;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblComplextype;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblInstantie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblInvoerder;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblLege_Zoo_cluster;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblPeriode;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblPeriodiek_vs2;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblPersoon;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblProvincie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblRedactie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblSynoniemen;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblVerwerving;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_Speciale_depositie/graf;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_diersoort_grafs;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_publicatie_verbeterd;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_publicatie_vs2;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Tbl_AanvullendOnderzoek;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Tbl_SpecialeDepositie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Tbl_Sporen;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Tbl_Zekerhe;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;Weekdieren;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;omg;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;publ_uniek_importeren_test2;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;synoniemen2;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;wng;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_cluster;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblGewogen;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblKlasse;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblVerzamelwijze;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_diersoort;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblSoort;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblZoo_publicatie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;boneinfo;TblPeriodiek;BASE TABLE;None;None;None;None;None;YES;NO;None

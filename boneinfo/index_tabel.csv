@@ -1,0 +1,40 @@
+tabel_naam;kolom_aantal;kolom_lijst;record_aantal;database_naam
+Name AutoCorrect Save Failures;5;"[""Object Name"", ""Object Type"", ""Failure Reason"", ""Time""]";71;boneinfo
+omg;19;"[""OMG_NR"", ""X_COORD"", ""Y_COORD"", ""TOPONIEM"", ""OZK_NAAM"", ""PLAATS"", ""GEMEENTE"", ""PROVINCIE"", ""OZK_TYPE"", ""DATUM_AANM"", ""DATUM_AANV"", ""DUUR"", ""MOTIEF"", ""UITVOERDER"", ""GEZAG"", ""PROJ_LEIDE"", ""OPD_GEVER"", ""TOELICHT""]";51871;boneinfo
+Opslagfouten bij automatische naamcorrectie;5;"[""Objectnaam"", ""Objecttype"", ""Reden van fout"", ""Tijd""]";14;boneinfo
+Paste Errors;3;"[""F1"", ""F2""]";17;boneinfo
+publ_uniek_importeren_test2;17;"[""Publicatienr"", ""Auteur 1"", ""Auteur 2"", ""Auteur 3"", ""Auteur 4"", ""Auteur 5"", ""Meer dan 5 auteurs"", ""Overige auteurs"", ""Redactie"", ""Jaar"", ""Artikel_titel"", ""Boektitel"", ""Periodiek"", ""Deel"", ""PDF"", ""Bibliotheek plaatsingscode""]";1765;boneinfo
+Switchboard Items;6;"[""SwitchboardID"", ""ItemNumber"", ""ItemText"", ""Command"", ""Argument""]";6;boneinfo
+synoniemen2;11;"[""Id"", ""synoniem"", ""type_synoniem"", ""taal"", ""taxon"", ""specific_epithet"", ""taxon_nsr_id"", ""uninomial"", ""infra_specific_epithet"", ""authorship""]";4326;boneinfo
+Tabel TblDiersoort_taxonlijst Naturalis_soort;16;"[""diersoortID"", ""lat_omschrijving"", ""soortnaam2"", ""Kingdom"", ""rijk"", ""TblDiersoort_phylum"", ""Taxon concepten (2)_phylum"", ""class"", ""klasse"", ""order"", ""orde"", ""family"", ""familie"", ""genus"", ""uninomial""]";766;boneinfo
+Taxon concepten (2);22;"[""Id"", ""wetenschappelijke_naam"", ""uninomial"", ""specific_epithet"", ""infra_specific_epithet"", ""soortnaam"", ""soortnaam2"", ""authorship"", ""nederlandse_naam"", ""rang"", ""nsr_id"", ""voorkomen_status"", ""habitat"", ""concept_url"", ""rijk"", ""phylum"", ""klasse"", ""orde"", ""familie"", ""genus"", ""species""]";28805;boneinfo
+Tbl_AanvullendOnderzoek;3;"[""ID"", ""niveau""]";18;boneinfo
+Tbl_SpecialeDepositie;3;"[""Soort"", ""TypeDepositie""]";15;boneinfo
+Tbl_Sporen;4;"[""sporen"", ""beginPeriode"", ""eindPeriode""]";73;boneinfo
+Tbl_Zekerhe;4;"[""afkorting"", ""zekerheid"", ""reliability""]";11;boneinfo
+TblAuteur;3;"[""Auteur"", ""Id""]";525;boneinfo
+TblComplextype;2;"[""Omschrijving""]";110;boneinfo
+TblGewogen;2;"[""Omschrijving""]";3;boneinfo
+TblInstantie;8;"[""Id"", ""Kenmerk"", ""Onderzoeksinstantie"", ""Afkorting onderzoeksinstantie"", ""Relatie"", ""Historie"", ""Relevant voor BoneInfo of RADAR""]";239;boneinfo
+TblInvoerder;2;"[""Invoerder""]";8;boneinfo
+TblKlasse;2;"[""Omschrijving""]";6;boneinfo
+TblLege_Zoo_cluster;25;"[""Zoonr"", ""Waarnemingsnr"", ""X_coord"", ""Y_coord"", ""Toponiem"", ""Plaats"", ""Gemeente"", ""Provincie"", ""Vondstverwerving"", ""Datum_vondst"", ""Complextype"", ""Begin_periode"", ""Beginjaar"", ""Eind_periode"", ""Eindjaar"", ""Opdrachtgever"", ""Onderzoeksinstantie"", ""Onderzoeker"", ""Omvang"", ""Gewogen"", ""Verzamelwijze"", ""Invoerder"", ""Datum_invoer"", ""Beschrijving""]";22;boneinfo
+TblPeriode;5;"[""periodecode"", ""omschrijving"", ""beginwaarde"", ""eindwaarde""]";54;boneinfo
+TblPeriodiek;3;"[""Omschrijving"", ""PeriodiekID""]";362;boneinfo
+TblPeriodiek_vs2;2;"[""Omschrijving""]";316;boneinfo
+TblPersoon;5;"[""pid"", ""voorletters"", ""naam"", ""woonplaats""]";340;boneinfo
+TblProvincie;2;"[""Omschrijving""]";12;boneinfo
+TblRedactie;3;"[""Veld1"", ""Id""]";1;boneinfo
+TblSoort;35;"[""SoortID"", ""ned_omschrijving"", ""lat_omschrijving"", ""eng_omschrijving"", ""group sequence"", ""group oud"", ""group"", ""Kingdom"", ""Phylum"", ""class"", ""order"", ""family"", ""genus"", ""andere taxonomische classificatie"", ""Synoniem"", ""Nat_wetenschappelijke_naam"", ""Nat_uninomial"", ""Nat_specific_epithet"", ""Nat_infra_specific_epithet"", ""Nat_soortnaam"", ""Nat_soortnaam2"", ""Nat_authorship"", ""Nat_nederlandse_naam"", ""Nat_rang"", ""Nat_voorkomen_status"", ""Nat_habitat"", ""Nat_concept_url"", ""Nat_rijk"", ""Nat_phylum"", ""Nat_klasse"", ""Nat_orde"", ""Nat_familie"", ""Nat_genus"", ""Nat_species""]";1425;boneinfo
+TblSynoniemen;18;"[""Id"", ""DiersoortID"", ""synoniem soort1"", ""synoniem soort2"", ""synoniem soort3"", ""synoniem genus"", ""synoniem familie"", ""synoniem orde"", ""synoniem klasse"", ""synoniem stam"", ""synoniem rijk"", ""synoniem NL naam1"", ""synoniem NL naam2"", ""synoniem NL naam3"", ""synoniem EN naam1"", ""synoniem EN naam2"", ""synoniem EN naam3""]";1372;boneinfo
+TblVerwerving;2;"[""Omschrijving""]";26;boneinfo
+TblVerzamelwijze;3;"[""Omschrijving"", ""OmschrijvingCF""]";14;boneinfo
+TblZoo_cluster;29;"[""Zoonr"", ""Waarnemingsnr"", ""Onderzoeksmeldingsnr"", ""Zaaknummer"", ""X_coord"", ""Y_coord"", ""Toponiem"", ""Plaats"", ""Gemeente"", ""Provincie"", ""Verwervingswijze"", ""Datum_einde_veldwerk"", ""Complextype"", ""Spoortype"", ""Begin_periode"", ""Beginjaar"", ""Eind_periode"", ""Eindjaar"", ""Opgravende_instantie"", ""Onderzoeksinstantie"", ""Onderzoeker"", ""Omvang"", ""Verzamelwijze"", ""Melder"", ""Datum_invoer"", ""Toelichting"", ""YYYYMMDD_datum_vondst"", ""Gewogen""]";2866;boneinfo
+TblZoo_diersoort;19;"[""id"", ""Zoonr"", ""Volgnr"", ""SoortID"", ""Eigen_invoer_nieuwe_soort"", ""Zekerheid"", ""Aantal"", ""Artefacten_gevonden"", ""Leeftijdsgegevens_beschikbaar"", ""Maten_beschikbaar"", ""Bewerkingssporen_beschikbaar"", ""Geslachtskenmerken_beschikbaar"", ""Pathologie\u00ebn_beschikbaar"", ""Aanvullend_onderzoek"", ""Monsters_genomen_maar_nog_niet_geanalyseerd"", ""Speciale_depositie/graf"", ""Toelichting"", ""DepositienrList""]";33056;boneinfo
+TblZoo_diersoort_grafs;3;"[""DiersoortID"", ""Depositienr""]";285;boneinfo
+TblZoo_publicatie;9;"[""Zoonr"", ""Volgnr"", ""Auteursnaam"", ""Jaar"", ""Artikel_titel"", ""Boektitel"", ""Periodiek"", ""Deel""]";4598;boneinfo
+TblZoo_publicatie_verbeterd;20;"[""Publicatienr"", ""Auteur 1"", ""Auteur 2"", ""Auteur 3"", ""Auteur 4"", ""Auteur 5"", ""Meer dan 5 auteurs"", ""Overige auteurs"", ""Redactie"", ""Jaar"", ""Artikel_titel"", ""Boektitel"", ""Periodiek"", ""Deel"", ""Paginanr"", ""Plaats van uitgave(Uitgever)"", ""PDF"", ""Bibliotheek plaatsingscode"", ""DOI""]";2011;boneinfo
+TblZoo_publicatie_vs2;3;"[""Publicatienr"", ""Zoonr""]";5202;boneinfo
+TblZoo_Speciale_depositie/graf;8;"[""Depositienr"", ""Type_gevonden_deposities"", ""aantal_gevonden"", ""aantal_onderzocht"", ""aantal_onderzochte_individuen"", ""aantal_resten"", ""opmerkingen""]";231;boneinfo
+Weekdieren;29;"[""Soortnummer"", ""Groepnummer"", ""Wetenschappelijke naam"", ""Auteursnaam"", ""Nederlandse naam"", ""Subgroep"", ""Systematisch niveau"", ""Status 1"", ""Status 2"", ""Alleen Belgie"", ""Familienummer"", ""Familienaam"", ""Flora Faunawet"", ""Doelsoort"", ""Rode Lijst"", ""Rode Lijst uitgebreid"", ""Habitatrichtlijn 1"", ""Habitatrichtlijn 2"", ""Conventie van Bern"", ""Rode Lijst Europa"", ""IUCN"", ""Atlas landslak"", ""Atlas zoobenthos"", ""Biotoop 1"", ""Biotoop 2"", ""Voorkomen"", ""Duitse naam"", ""Engelse naam""]";626;boneinfo
+wng;35;"[""WNG_NR"", ""MDG_ID"", ""EXTERN_NR"", ""V_PID"", ""V_NAAM"", ""V_WOONPL"", ""DATUM_V"", ""M_PID"", ""M_NAAM"", ""M_WOONPL"", ""DATUM_M"", ""B_PID"", ""B_NAAM"", ""B_WOONPL"", ""DATUM_B"", ""X_COORD"", ""Y_COORD"", ""TOPONIEM"", ""PLAATS"", ""GEMEENTE"", ""PROVINCIE"", ""VERWERV"", ""MAAIVELD"", ""GEOMORF"", ""TEXTUUR"", ""LENGTE"", ""BREEDTE"", ""O_DIEP_MAX"", ""NAP_MV"", ""V_DIEP_MIN"", ""V_DIEP_MAX"", ""INTACT_BOD"", ""OMG_NR"", ""BESCHRIJVING""]";88195;boneinfo

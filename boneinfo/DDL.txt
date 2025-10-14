@@ -1,0 +1,840 @@
+-- DROP SCHEMA boneinfo;
+
+CREATE SCHEMA boneinfo AUTHORIZATION "rce-gdm";
+-- boneinfo."Name AutoCorrect Save Failures" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Name AutoCorrect Save Failures";
+
+CREATE TABLE boneinfo."Name AutoCorrect Save Failures" (
+	"Object Name" varchar(255) NULL,
+	"Object Type" varchar(255) NULL,
+	"Failure Reason" varchar(255) NULL,
+	"Time" timestamp DEFAULT now() NULL
+);
+
+
+-- boneinfo."Opslagfouten bij automatische naamcorrectie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Opslagfouten bij automatische naamcorrectie";
+
+CREATE TABLE boneinfo."Opslagfouten bij automatische naamcorrectie" (
+	"Objectnaam" varchar(255) NULL,
+	"Objecttype" varchar(255) NULL,
+	"Reden van fout" varchar(255) NULL,
+	"Tijd" timestamp DEFAULT now() NULL
+);
+
+
+-- boneinfo."Paste Errors" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Paste Errors";
+
+CREATE TABLE boneinfo."Paste Errors" (
+	f1 varchar(255) NULL,
+	f2 varchar(255) NULL
+);
+
+
+-- boneinfo."Switchboard Items" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Switchboard Items";
+
+CREATE TABLE boneinfo."Switchboard Items" (
+	"SwitchboardID" int4 NOT NULL,
+	"ItemNumber" int2 DEFAULT 0 NOT NULL,
+	"ItemText" varchar(255) NULL,
+	"Command" int2 NULL,
+	"Argument" varchar(255) NULL,
+	CONSTRAINT sys_pk_10889 PRIMARY KEY ("SwitchboardID", "ItemNumber")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10889_10890 ON boneinfo."Switchboard Items" USING btree ("SwitchboardID", "ItemNumber");
+
+
+-- boneinfo."Tabel TblDiersoort_taxonlijst Naturalis_soort" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Tabel TblDiersoort_taxonlijst Naturalis_soort";
+
+CREATE TABLE boneinfo."Tabel TblDiersoort_taxonlijst Naturalis_soort" (
+	"diersoortID" int4 NULL,
+	lat_omschrijving varchar(50) NULL,
+	soortnaam2 varchar(255) NULL,
+	"Kingdom" varchar(255) NULL,
+	rijk varchar(255) NULL,
+	"TblDiersoort_phylum" varchar(255) NULL,
+	"Taxon concepten (2)_phylum" varchar(255) NULL,
+	"class" varchar(20) NULL,
+	klasse varchar(255) NULL,
+	"order" varchar(50) NULL,
+	orde varchar(255) NULL,
+	"family" varchar(50) NULL,
+	familie varchar(255) NULL,
+	genus varchar(50) NULL,
+	uninomial varchar(255) NULL
+);
+
+
+-- boneinfo."Taxon concepten (2)" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Taxon concepten (2)";
+
+CREATE TABLE boneinfo."Taxon concepten (2)" (
+	"Id" int4 NOT NULL,
+	wetenschappelijke_naam varchar(255) NULL,
+	uninomial varchar(255) NULL,
+	specific_epithet varchar(255) NULL,
+	infra_specific_epithet varchar(255) NULL,
+	soortnaam varchar(255) NULL,
+	soortnaam2 varchar(255) NULL,
+	authorship varchar(255) NULL,
+	nederlandse_naam varchar(255) NULL,
+	rang varchar(255) NULL,
+	nsr_id varchar(255) NULL,
+	voorkomen_status varchar(255) NULL,
+	habitat varchar(255) NULL,
+	concept_url varchar(255) NULL,
+	rijk varchar(255) NULL,
+	phylum varchar(255) NULL,
+	klasse varchar(255) NULL,
+	orde varchar(255) NULL,
+	familie varchar(255) NULL,
+	genus varchar(255) NULL,
+	species varchar(255) NULL,
+	CONSTRAINT sys_pk_10899 PRIMARY KEY ("Id")
+);
+CREATE INDEX "TAXON CONCEPTEN (2)_NSR_ID" ON boneinfo."Taxon concepten (2)" USING btree (nsr_id);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10899_10900 ON boneinfo."Taxon concepten (2)" USING btree ("Id");
+
+
+-- boneinfo."TblAuteur" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblAuteur";
+
+CREATE TABLE boneinfo."TblAuteur" (
+	"Id" int4 NOT NULL,
+	"Auteur" varchar(100) NOT NULL,
+	CONSTRAINT sys_pk_10927 PRIMARY KEY ("Id")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10927_10928 ON boneinfo."TblAuteur" USING btree ("Id");
+CREATE UNIQUE INDEX sys_idx_tblauteur_auteur_10933 ON boneinfo."TblAuteur" USING btree ("Auteur");
+
+
+-- boneinfo."TblComplextype" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblComplextype";
+
+CREATE TABLE boneinfo."TblComplextype" (
+	"Omschrijving" varchar(35) NOT NULL,
+	CONSTRAINT sys_pk_10938 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10938_10939 ON boneinfo."TblComplextype" USING btree ("Omschrijving");
+CREATE INDEX tblcomplextype_omschrijving ON boneinfo."TblComplextype" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblGewogen" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblGewogen";
+
+CREATE TABLE boneinfo."TblGewogen" (
+	"Omschrijving" varchar(50) NOT NULL,
+	CONSTRAINT sys_pk_10944 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10944_10945 ON boneinfo."TblGewogen" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblInstantie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblInstantie";
+
+CREATE TABLE boneinfo."TblInstantie" (
+	"Kenmerk" varchar(255) NULL,
+	"Onderzoeksinstantie" varchar(255) NULL,
+	"Relatie" varchar(255) NULL,
+	"Afkorting onderzoeksinstantie" varchar(255) NULL,
+	"Historie" varchar(255) NULL,
+	"Relevant voor BoneInfo of RADAR" varchar(255) NULL,
+	"Id" int4 NOT NULL,
+	CONSTRAINT sys_pk_10949 PRIMARY KEY ("Id")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10949_10950 ON boneinfo."TblInstantie" USING btree ("Id");
+
+
+-- boneinfo."TblInvoerder" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblInvoerder";
+
+CREATE TABLE boneinfo."TblInvoerder" (
+	"Invoerder" varchar(50) NOT NULL,
+	CONSTRAINT sys_pk_10954 PRIMARY KEY ("Invoerder")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10954_10955 ON boneinfo."TblInvoerder" USING btree ("Invoerder");
+
+
+-- boneinfo."TblKlasse" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblKlasse";
+
+CREATE TABLE boneinfo."TblKlasse" (
+	"Omschrijving" varchar(20) NOT NULL,
+	CONSTRAINT sys_pk_10959 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10959_10960 ON boneinfo."TblKlasse" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblLege_Zoo_cluster" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblLege_Zoo_cluster";
+
+CREATE TABLE boneinfo."TblLege_Zoo_cluster" (
+	"Zoonr" int2 DEFAULT 0 NOT NULL,
+	"Waarnemingsnr" int4 DEFAULT 0 NULL,
+	"X_coord" int4 DEFAULT 0 NOT NULL,
+	"Y_coord" int4 DEFAULT 0 NOT NULL,
+	"Toponiem" varchar(40) NULL,
+	"Plaats" varchar(35) NOT NULL,
+	"Gemeente" varchar(35) NOT NULL,
+	"Provincie" varchar(50) NULL,
+	"Vondstverwerving" varchar(50) NULL,
+	"Datum_vondst" varchar(50) NOT NULL,
+	"Complextype" varchar(50) NULL,
+	"Begin_periode" varchar(7) NOT NULL,
+	"Beginjaar" int4 DEFAULT 0 NULL,
+	"Eind_periode" varchar(7) NOT NULL,
+	"Eindjaar" int4 DEFAULT 0 NULL,
+	"Opdrachtgever" varchar(150) NULL,
+	"Onderzoeksinstantie" varchar(150) NULL,
+	"Onderzoeker" varchar(150) NULL,
+	"Omvang" varchar(50) NULL,
+	"Gewogen" varchar(10) NULL,
+	"Verzamelwijze" varchar(50) NULL,
+	"Invoerder" varchar(50) NOT NULL,
+	"Datum_invoer" timestamp DEFAULT now() NOT NULL,
+	"Beschrijving" text NULL,
+	CONSTRAINT sys_pk_10965 PRIMARY KEY ("Zoonr")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10965_10966 ON boneinfo."TblLege_Zoo_cluster" USING btree ("Zoonr");
+
+
+-- boneinfo."TblPeriode" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblPeriode";
+
+CREATE TABLE boneinfo."TblPeriode" (
+	periodecode varchar(40) NOT NULL,
+	omschrijving varchar(40) NOT NULL,
+	beginwaarde int4 DEFAULT 0 NOT NULL,
+	eindwaarde int4 DEFAULT 0 NOT NULL,
+	CONSTRAINT sys_pk_10984 PRIMARY KEY (periodecode)
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10984_10985 ON boneinfo."TblPeriode" USING btree (periodecode);
+CREATE INDEX tblperiode_periodecode ON boneinfo."TblPeriode" USING btree (periodecode);
+
+
+-- boneinfo."TblPeriodiek" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblPeriodiek";
+
+CREATE TABLE boneinfo."TblPeriodiek" (
+	"PeriodiekID" int4 NOT NULL,
+	"Omschrijving" varchar(100) NOT NULL,
+	CONSTRAINT sys_pk_10993 PRIMARY KEY ("PeriodiekID")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10993_10994 ON boneinfo."TblPeriodiek" USING btree ("PeriodiekID");
+CREATE INDEX tblperiodiek_omschrijving ON boneinfo."TblPeriodiek" USING btree ("Omschrijving");
+CREATE INDEX tblperiodiek_periodiekid ON boneinfo."TblPeriodiek" USING btree ("PeriodiekID");
+
+
+-- boneinfo."TblPeriodiek_vs2" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblPeriodiek_vs2";
+
+CREATE TABLE boneinfo."TblPeriodiek_vs2" (
+	"Omschrijving" varchar(100) NOT NULL,
+	CONSTRAINT sys_pk_11004 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11004_11005 ON boneinfo."TblPeriodiek_vs2" USING btree ("Omschrijving");
+CREATE UNIQUE INDEX sys_idx_tblperiodiek_vs2_omschrijving_10999 ON boneinfo."TblPeriodiek_vs2" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblPersoon" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblPersoon";
+
+CREATE TABLE boneinfo."TblPersoon" (
+	pid varchar(5) NOT NULL,
+	voorletters varchar(50) NULL,
+	naam varchar(55) NOT NULL,
+	woonplaats varchar(24) NULL,
+	CONSTRAINT sys_pk_11016 PRIMARY KEY (pid)
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11016_11017 ON boneinfo."TblPersoon" USING btree (pid);
+CREATE UNIQUE INDEX sys_idx_tblpersoon_pid_11010 ON boneinfo."TblPersoon" USING btree (pid);
+
+
+-- boneinfo."TblProvincie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblProvincie";
+
+CREATE TABLE boneinfo."TblProvincie" (
+	"Omschrijving" varchar(15) NOT NULL,
+	CONSTRAINT sys_pk_11023 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11023_11024 ON boneinfo."TblProvincie" USING btree ("Omschrijving");
+CREATE INDEX tblprovincie_omschrijving ON boneinfo."TblProvincie" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblRedactie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblRedactie";
+
+CREATE TABLE boneinfo."TblRedactie" (
+	"Id" int4 NOT NULL,
+	"Veld1" varchar(255) NULL,
+	CONSTRAINT sys_pk_11029 PRIMARY KEY ("Id")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11029_11030 ON boneinfo."TblRedactie" USING btree ("Id");
+
+
+-- boneinfo."TblSoort" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblSoort";
+
+CREATE TABLE boneinfo."TblSoort" (
+	"SoortID" int4 NOT NULL,
+	ned_omschrijving varchar(50) NULL,
+	lat_omschrijving varchar(50) NOT NULL,
+	eng_omschrijving varchar(50) NULL,
+	"group sequence" varchar(50) NULL,
+	"group oud" varchar(50) NULL,
+	"group" varchar(50) NULL,
+	genus varchar(50) NULL,
+	"family" varchar(50) NULL,
+	"order" varchar(50) NULL,
+	"class" varchar(20) NULL,
+	"Phylum" varchar(255) NULL,
+	"Kingdom" varchar(255) DEFAULT 'Animalia'::character varying NULL,
+	"Synoniem" varchar(255) NULL,
+	"Nat_wetenschappelijke_naam" varchar(255) NULL,
+	"Nat_uninomial" varchar(255) NULL,
+	"Nat_specific_epithet" varchar(255) NULL,
+	"Nat_infra_specific_epithet" varchar(255) NULL,
+	"Nat_soortnaam" varchar(255) NULL,
+	"Nat_soortnaam2" varchar(255) NULL,
+	"Nat_authorship" varchar(255) NULL,
+	"Nat_nederlandse_naam" varchar(255) NULL,
+	"Nat_rang" varchar(255) NULL,
+	"Nat_voorkomen_status" varchar(255) NULL,
+	"Nat_habitat" varchar(255) NULL,
+	"Nat_concept_url" varchar(255) NULL,
+	"Nat_rijk" varchar(255) NULL,
+	"Nat_phylum" varchar(255) NULL,
+	"Nat_klasse" varchar(255) NULL,
+	"Nat_orde" varchar(255) NULL,
+	"Nat_familie" varchar(255) NULL,
+	"Nat_genus" varchar(255) NULL,
+	"Nat_species" varchar(255) NULL,
+	"andere taxonomische classificatie" varchar(255) NULL,
+	CONSTRAINT sys_pk_11039 PRIMARY KEY ("SoortID")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11039_11040 ON boneinfo."TblSoort" USING btree ("SoortID");
+CREATE UNIQUE INDEX sys_idx_tblsoort_lat_omschrijving_11034 ON boneinfo."TblSoort" USING btree (lat_omschrijving);
+CREATE INDEX tblsoort_diersoortid ON boneinfo."TblSoort" USING btree ("SoortID");
+
+
+-- boneinfo."TblSynoniemen" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblSynoniemen";
+
+CREATE TABLE boneinfo."TblSynoniemen" (
+	"Id" int4 NOT NULL,
+	"synoniem soort1" varchar(255) NULL,
+	"synoniem soort2" varchar(255) NULL,
+	"synoniem soort3" varchar(255) NULL,
+	"synoniem genus" varchar(255) NULL,
+	"synoniem familie" varchar(255) NULL,
+	"synoniem orde" varchar(255) NULL,
+	"synoniem klasse" varchar(255) NULL,
+	"synoniem stam" varchar(255) NULL,
+	"synoniem rijk" varchar(255) NULL,
+	"DiersoortID" int4 NOT NULL,
+	"synoniem NL naam1" varchar(255) NULL,
+	"synoniem NL naam2" varchar(255) NULL,
+	"synoniem NL naam3" varchar(255) NULL,
+	"synoniem EN naam1" varchar(255) NULL,
+	"synoniem EN naam2" varchar(255) NULL,
+	"synoniem EN naam3" varchar(255) NULL,
+	CONSTRAINT sys_pk_11046 PRIMARY KEY ("Id", "DiersoortID")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11046_11047 ON boneinfo."TblSynoniemen" USING btree ("Id", "DiersoortID");
+CREATE INDEX tblsynoniemen_diersoortid ON boneinfo."TblSynoniemen" USING btree ("DiersoortID");
+
+
+-- boneinfo."TblVerwerving" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblVerwerving";
+
+CREATE TABLE boneinfo."TblVerwerving" (
+	"Omschrijving" varchar(70) NOT NULL,
+	CONSTRAINT sys_pk_11051 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11051_11052 ON boneinfo."TblVerwerving" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblVerzamelwijze" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblVerzamelwijze";
+
+CREATE TABLE boneinfo."TblVerzamelwijze" (
+	"Omschrijving" varchar(50) NOT NULL,
+	"OmschrijvingCF" varchar(50) NULL,
+	CONSTRAINT sys_pk_11057 PRIMARY KEY ("Omschrijving")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11057_11058 ON boneinfo."TblVerzamelwijze" USING btree ("Omschrijving");
+
+
+-- boneinfo."TblZoo_Speciale_depositie/graf" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_Speciale_depositie/graf";
+
+CREATE TABLE boneinfo."TblZoo_Speciale_depositie/graf" (
+	"Type_gevonden_deposities" varchar(255) NULL,
+	aantal_onderzocht int4 DEFAULT 0 NULL,
+	aantal_onderzochte_individuen int4 DEFAULT 0 NULL,
+	aantal_resten int4 DEFAULT 0 NULL,
+	aantal_gevonden int4 DEFAULT 0 NULL,
+	"Depositienr" int4 NOT NULL,
+	opmerkingen text NULL,
+	CONSTRAINT sys_pk_11089 PRIMARY KEY ("Depositienr")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11089_11090 ON boneinfo."TblZoo_Speciale_depositie/graf" USING btree ("Depositienr");
+
+
+-- boneinfo."TblZoo_diersoort_grafs" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_diersoort_grafs";
+
+CREATE TABLE boneinfo."TblZoo_diersoort_grafs" (
+	"DiersoortID" int4 NULL,
+	"Depositienr" int4 NULL
+);
+CREATE INDEX tblzoo_diersoort_grafs_tblzoo_diersoort_grafsdepositienr ON boneinfo."TblZoo_diersoort_grafs" USING btree ("Depositienr");
+
+
+-- boneinfo."TblZoo_publicatie_verbeterd" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_publicatie_verbeterd";
+
+CREATE TABLE boneinfo."TblZoo_publicatie_verbeterd" (
+	"Publicatienr" float8 NOT NULL,
+	"Auteur 1" varchar(255) NULL,
+	"Artikel_titel" varchar(255) NULL,
+	"Boektitel" varchar(255) NULL,
+	"Periodiek" varchar(255) NULL,
+	"Deel" varchar(255) NULL,
+	"Bibliotheek plaatsingscode" varchar(255) NULL,
+	pdf bool DEFAULT false NULL,
+	"Auteur 2" varchar(255) NULL,
+	"Auteur 3" varchar(255) NULL,
+	"Auteur 4" varchar(255) NULL,
+	"Auteur 5" varchar(255) NULL,
+	"Meer dan 5 auteurs" bool DEFAULT false NULL,
+	"Redactie" varchar(5) NULL,
+	"Overige auteurs" varchar(255) NULL,
+	"Jaar" varchar(255) NULL,
+	"Paginanr" varchar(255) NULL,
+	doi varchar(255) NULL,
+	"Plaats van uitgave(Uitgever)" varchar(255) NULL
+);
+CREATE UNIQUE INDEX sys_idx_tblzoo_publicatie_verbeterd_publicatienr_11086 ON boneinfo."TblZoo_publicatie_verbeterd" USING btree ("Publicatienr");
+
+
+-- boneinfo."TblZoo_publicatie_vs2" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_publicatie_vs2";
+
+CREATE TABLE boneinfo."TblZoo_publicatie_vs2" (
+	"Publicatienr" int4 NULL,
+	"Zoonr" int4 NULL
+);
+CREATE INDEX tblzoo_publicatie_vs2_tblzoo_publicatie_vs2publicatienr ON boneinfo."TblZoo_publicatie_vs2" USING btree ("Publicatienr");
+CREATE INDEX tblzoo_publicatie_vs2_tblzoo_publicatie_vs2zoonr ON boneinfo."TblZoo_publicatie_vs2" USING btree ("Zoonr");
+
+
+-- boneinfo."Tbl_AanvullendOnderzoek" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Tbl_AanvullendOnderzoek";
+
+CREATE TABLE boneinfo."Tbl_AanvullendOnderzoek" (
+	niveau varchar(255) NULL,
+	id int4 NOT NULL,
+	CONSTRAINT sys_pk_10904 PRIMARY KEY (id)
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10904_10905 ON boneinfo."Tbl_AanvullendOnderzoek" USING btree (id);
+CREATE INDEX tbl_aanvullendonderzoek_id ON boneinfo."Tbl_AanvullendOnderzoek" USING btree (id);
+
+
+-- boneinfo."Tbl_SpecialeDepositie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Tbl_SpecialeDepositie";
+
+CREATE TABLE boneinfo."Tbl_SpecialeDepositie" (
+	"TypeDepositie" varchar(255) NOT NULL,
+	"Soort" varchar(255) NULL,
+	CONSTRAINT sys_pk_10909 PRIMARY KEY ("TypeDepositie")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10909_10910 ON boneinfo."Tbl_SpecialeDepositie" USING btree ("TypeDepositie");
+
+
+-- boneinfo."Tbl_Sporen" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Tbl_Sporen";
+
+CREATE TABLE boneinfo."Tbl_Sporen" (
+	"beginPeriode" varchar(255) NULL,
+	"eindPeriode" varchar(255) NULL,
+	sporen varchar(255) NOT NULL,
+	CONSTRAINT sys_pk_10915 PRIMARY KEY (sporen)
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10915_10916 ON boneinfo."Tbl_Sporen" USING btree (sporen);
+
+
+-- boneinfo."Tbl_Zekerhe" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Tbl_Zekerhe";
+
+CREATE TABLE boneinfo."Tbl_Zekerhe" (
+	zekerheid varchar(255) NOT NULL,
+	reliability varchar(255) NULL,
+	afkorting varchar(255) NULL,
+	CONSTRAINT sys_pk_10921 PRIMARY KEY (zekerheid)
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10921_10922 ON boneinfo."Tbl_Zekerhe" USING btree (zekerheid);
+CREATE INDEX tbl_zekerhe_zekerheid ON boneinfo."Tbl_Zekerhe" USING btree (zekerheid);
+
+
+-- boneinfo."Weekdieren" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."Weekdieren";
+
+CREATE TABLE boneinfo."Weekdieren" (
+	"Soortnummer" varchar(6) NULL,
+	"Groepnummer" varchar(4) NULL,
+	"Wetenschappelijke naam" varchar(55) NULL,
+	"Auteursnaam" varchar(55) NULL,
+	"Nederlandse naam" varchar(55) NULL,
+	"Subgroep" varchar(25) NULL,
+	"Systematisch niveau" varchar(10) NULL,
+	"Status 1" varchar(4) NULL,
+	"Status 2" varchar(4) NULL,
+	"Alleen Belgie" varchar(10) NULL,
+	"Familienummer" varchar(4) NULL,
+	"Familienaam" varchar(40) NULL,
+	"Flora Faunawet" varchar(50) NULL,
+	"Doelsoort" varchar(50) NULL,
+	"Rode Lijst" varchar(10) NULL,
+	"Rode Lijst uitgebreid" varchar(50) NULL,
+	"Habitatrichtlijn 1" varchar(4) NULL,
+	"Habitatrichtlijn 2" varchar(4) NULL,
+	"Conventie van Bern" varchar(4) NULL,
+	"Rode Lijst Europa" varchar(4) NULL,
+	iucn varchar(50) NULL,
+	"Atlas landslak" varchar(4) NULL,
+	"Atlas zoobenthos" varchar(4) NULL,
+	"Biotoop 1" varchar(4) NULL,
+	"Biotoop 2" varchar(4) NULL,
+	"Voorkomen" varchar(10) NULL,
+	"Duitse naam" varchar(55) NULL,
+	"Engelse naam" varchar(55) NULL
+);
+CREATE UNIQUE INDEX "SYS_IDX_WEEKDIEREN_WETENSCHAPPELIJKE NAAM_11094" ON boneinfo."Weekdieren" USING btree ("Wetenschappelijke naam");
+CREATE INDEX "WEEKDIEREN_RODE LIJST UITGEBREID" ON boneinfo."Weekdieren" USING btree ("Rode Lijst uitgebreid");
+
+
+-- boneinfo.omg definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo.omg;
+
+CREATE TABLE boneinfo.omg (
+	omg_nr float8 NULL,
+	x_coord float8 NULL,
+	y_coord float8 NULL,
+	toponiem varchar(70) NULL,
+	ozk_naam varchar(40) NULL,
+	plaats varchar(40) NULL,
+	gemeente varchar(40) NULL,
+	provincie varchar(40) NULL,
+	ozk_type varchar(3) NULL,
+	datum_aanm varchar(10) NULL,
+	datum_aanv varchar(10) NULL,
+	duur float8 NULL,
+	motief varchar(3) NULL,
+	uitvoerder varchar(80) NULL,
+	gezag varchar(80) NULL,
+	proj_leide varchar(80) NULL,
+	opd_gever varchar(80) NULL,
+	toelicht text NULL
+);
+
+
+-- boneinfo.publ_uniek_importeren_test2 definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo.publ_uniek_importeren_test2;
+
+CREATE TABLE boneinfo.publ_uniek_importeren_test2 (
+	"Publicatienr" float8 NOT NULL,
+	"Auteur 1" varchar(255) NULL,
+	"Auteur 2" varchar(255) NULL,
+	"Auteur 3" varchar(255) NULL,
+	"Auteur 4" varchar(255) NULL,
+	"Auteur 5" varchar(255) NULL,
+	"Meer dan 5 auteurs" bool DEFAULT false NULL,
+	"Overige auteurs" varchar(255) NULL,
+	"Redactie" varchar(5) NULL,
+	"Jaar" float8 NULL,
+	"Artikel_titel" varchar(255) NULL,
+	"Boektitel" varchar(255) NULL,
+	"Periodiek" varchar(255) NULL,
+	"Deel" varchar(255) NULL,
+	pdf bool DEFAULT false NULL,
+	"Bibliotheek plaatsingscode" varchar(255) NULL
+);
+CREATE UNIQUE INDEX sys_idx_publ_uniek_importeren_test2_publicatienr_10883 ON boneinfo.publ_uniek_importeren_test2 USING btree ("Publicatienr");
+
+
+-- boneinfo.synoniemen2 definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo.synoniemen2;
+
+CREATE TABLE boneinfo.synoniemen2 (
+	synoniem varchar(255) NULL,
+	type_synoniem varchar(255) NULL,
+	taal varchar(255) NULL,
+	taxon varchar(255) NULL,
+	taxon_nsr_id varchar(255) NULL,
+	uninomial varchar(255) NULL,
+	specific_epithet varchar(255) NULL,
+	infra_specific_epithet varchar(255) NULL,
+	authorship varchar(255) NULL,
+	"Id" int4 NOT NULL,
+	CONSTRAINT sys_pk_10894 PRIMARY KEY ("Id")
+);
+CREATE INDEX synoniemen2_taxon_nsr_id ON boneinfo.synoniemen2 USING btree (taxon_nsr_id);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10894_10895 ON boneinfo.synoniemen2 USING btree ("Id");
+
+
+-- boneinfo.wng definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo.wng;
+
+CREATE TABLE boneinfo.wng (
+	wng_nr float8 NULL,
+	mdg_id float8 NULL,
+	extern_nr varchar(20) NULL,
+	v_pid varchar(5) NULL,
+	v_naam varchar(80) NULL,
+	v_woonpl varchar(40) NULL,
+	datum_v varchar(10) NULL,
+	m_pid varchar(5) NULL,
+	m_naam varchar(80) NULL,
+	m_woonpl varchar(40) NULL,
+	datum_m varchar(10) NULL,
+	b_pid varchar(5) NULL,
+	b_naam varchar(80) NULL,
+	b_woonpl varchar(40) NULL,
+	datum_b varchar(10) NULL,
+	x_coord float8 NULL,
+	y_coord float8 NULL,
+	toponiem varchar(70) NULL,
+	plaats varchar(40) NULL,
+	gemeente varchar(40) NULL,
+	provincie varchar(40) NULL,
+	verwerv varchar(3) NULL,
+	maaiveld varchar(3) NULL,
+	geomorf varchar(3) NULL,
+	textuur varchar(6) NULL,
+	lengte float8 NULL,
+	breedte float8 NULL,
+	o_diep_max float8 NULL,
+	nap_mv float8 NULL,
+	v_diep_min float8 NULL,
+	v_diep_max float8 NULL,
+	intact_bod varchar(1) NULL,
+	omg_nr varchar(255) NULL,
+	beschrijving text NULL
+);
+CREATE INDEX wng_b_pid ON boneinfo.wng USING btree (b_pid);
+CREATE INDEX wng_m_pid ON boneinfo.wng USING btree (m_pid);
+CREATE INDEX wng_mdg_id ON boneinfo.wng USING btree (mdg_id);
+CREATE INDEX wng_v_pid ON boneinfo.wng USING btree (v_pid);
+
+
+-- boneinfo."TblZoo_cluster" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_cluster";
+
+CREATE TABLE boneinfo."TblZoo_cluster" (
+	"Zoonr" int4 NULL,
+	"Waarnemingsnr" int4 NULL,
+	"X_coord" varchar(50) NULL,
+	"Y_coord" varchar(50) NULL,
+	"Toponiem" varchar(40) NULL,
+	"Plaats" varchar(35) NULL,
+	"Gemeente" varchar(35) NULL,
+	"Provincie" varchar(50) NULL,
+	"Verwervingswijze" varchar(50) NULL,
+	"Complextype" varchar(50) NULL,
+	"Begin_periode" varchar(40) NULL,
+	"Beginjaar" int4 NULL,
+	"Eind_periode" varchar(40) NULL,
+	"Eindjaar" int4 NULL,
+	"Onderzoeker" varchar(150) NULL,
+	"Omvang" varchar(50) NULL,
+	"Verzamelwijze" varchar(50) NULL,
+	"Melder" varchar(50) NULL,
+	"Datum_invoer" timestamp NULL,
+	"Toelichting" text NULL,
+	"YYYYMMDD_datum_vondst" varchar(50) NULL,
+	"Gewogen" varchar(50) NULL,
+	"Onderzoeksmeldingsnr" int4 NULL,
+	"Onderzoeksinstantie" varchar(255) NULL,
+	"Opgravende_instantie" varchar(255) NULL,
+	"Datum_einde_veldwerk" varchar(255) NULL,
+	"Spoortype" varchar(255) NULL,
+	"Zaaknummer" int4 NULL,
+	CONSTRAINT tblzoo_cluster_tblgewogentblzoo_cluster FOREIGN KEY ("Gewogen") REFERENCES boneinfo."TblGewogen"("Omschrijving") ON UPDATE CASCADE,
+	CONSTRAINT tblzoo_cluster_tblklassetblzoo_cluster FOREIGN KEY ("Omvang") REFERENCES boneinfo."TblKlasse"("Omschrijving") ON UPDATE CASCADE,
+	CONSTRAINT tblzoo_cluster_tblverzamelwijzetblzoo_cluster FOREIGN KEY ("Verzamelwijze") REFERENCES boneinfo."TblVerzamelwijze"("Omschrijving") ON UPDATE CASCADE
+);
+CREATE INDEX sys_idx_tblzoo_cluster_tblgewogentblzoo_cluster_11618 ON boneinfo."TblZoo_cluster" USING btree ("Gewogen");
+CREATE INDEX sys_idx_tblzoo_cluster_tblklassetblzoo_cluster_11625 ON boneinfo."TblZoo_cluster" USING btree ("Omvang");
+CREATE INDEX sys_idx_tblzoo_cluster_tblverzamelwijzetblzoo_cluster_11632 ON boneinfo."TblZoo_cluster" USING btree ("Verzamelwijze");
+
+
+-- boneinfo."TblZoo_diersoort" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_diersoort";
+
+CREATE TABLE boneinfo."TblZoo_diersoort" (
+	"Zoonr" int2 DEFAULT 0 NOT NULL,
+	"Volgnr" int2 DEFAULT 0 NOT NULL,
+	"SoortID" int4 DEFAULT 0 NULL,
+	"Eigen_invoer_nieuwe_soort" varchar(255) NULL,
+	"Zekerheid" varchar(255) NULL,
+	"Artefacten_gevonden" bool DEFAULT false NULL,
+	"Leeftijdsgegevens_beschikbaar" bool DEFAULT false NULL,
+	"Maten_beschikbaar" bool DEFAULT false NULL,
+	"Bewerkingssporen_beschikbaar" bool DEFAULT false NULL,
+	"Geslachtskenmerken_beschikbaar" bool DEFAULT false NULL,
+	"Pathologieën_beschikbaar" bool DEFAULT false NULL,
+	"Monsters_genomen_maar_nog_niet_geanalyseerd" varchar(255) NULL,
+	"Aanvullend_onderzoek" varchar(255) NULL,
+	"Aantal" int4 DEFAULT 0 NULL,
+	"Speciale_depositie/graf" bool DEFAULT false NULL,
+	id int4 NULL,
+	"DepositienrList" text NULL,
+	"Toelichting" text NULL,
+	CONSTRAINT tblzoo_diersoort_tbldiersoorttblzoo_diersoort1 FOREIGN KEY ("SoortID") REFERENCES boneinfo."TblSoort"("SoortID")
+);
+CREATE INDEX sys_idx_tblzoo_diersoort_tbldiersoorttblzoo_diersoort1_11146 ON boneinfo."TblZoo_diersoort" USING btree ("SoortID");
+CREATE INDEX tblzoo_diersoort_id ON boneinfo."TblZoo_diersoort" USING btree (id);
+CREATE INDEX tblzoo_diersoort_tblzoo_diersoortzoonr ON boneinfo."TblZoo_diersoort" USING btree ("Zoonr");
+CREATE INDEX tblzoo_diersoort_volgnr ON boneinfo."TblZoo_diersoort" USING btree ("Volgnr");
+CREATE INDEX tblzoo_diersoort_zekerheid ON boneinfo."TblZoo_diersoort" USING btree ("Zekerheid");
+
+
+-- boneinfo."TblZoo_publicatie" definition
+
+-- Drop table
+
+-- DROP TABLE boneinfo."TblZoo_publicatie";
+
+CREATE TABLE boneinfo."TblZoo_publicatie" (
+	"Zoonr" int2 DEFAULT 0 NOT NULL,
+	"Volgnr" int2 DEFAULT 0 NOT NULL,
+	"Jaar" int2 DEFAULT 0 NOT NULL,
+	"Periodiek" int4 DEFAULT 0 NULL,
+	"Deel" varchar(50) NULL,
+	"Auteursnaam" varchar(255) NOT NULL,
+	"Artikel_titel" varchar(255) NULL,
+	"Boektitel" varchar(255) NULL,
+	CONSTRAINT sys_pk_11077 PRIMARY KEY ("Zoonr", "Volgnr"),
+	CONSTRAINT tblzoo_publicatie_tblperiodiektblzoo_publicatie FOREIGN KEY ("Periodiek") REFERENCES boneinfo."TblPeriodiek"("PeriodiekID") ON UPDATE CASCADE
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_11077_11078 ON boneinfo."TblZoo_publicatie" USING btree ("Zoonr", "Volgnr");
+CREATE INDEX sys_idx_tblzoo_publicatie_tblperiodiektblzoo_publicatie_11155 ON boneinfo."TblZoo_publicatie" USING btree ("Periodiek");
+CREATE INDEX tblzoo_publicatie_tblzoo_publicatiezoonr ON boneinfo."TblZoo_publicatie" USING btree ("Zoonr");
