@@ -1,0 +1,649 @@
+-- DROP SCHEMA radar;
+
+CREATE SCHEMA radar AUTHORIZATION "rce-gdm";
+-- radar."Akkeronkruiden Karl" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Akkeronkruiden Karl";
+
+CREATE TABLE radar."Akkeronkruiden Karl" (
+	"Id" int4 NOT NULL,
+	"1" varchar(255) NULL,
+	"2" varchar(255) NULL,
+	CONSTRAINT sys_pk_10762 PRIMARY KEY ("Id")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10762_10763 ON radar."Akkeronkruiden Karl" USING btree ("Id");
+
+
+-- radar."Archeoregio" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Archeoregio";
+
+CREATE TABLE radar."Archeoregio" (
+	archregio varchar(255) NULL,
+	"Regio_ID" float8 NULL
+);
+CREATE UNIQUE INDEX sys_idx_archeoregio_regio_id_10767 ON radar."Archeoregio" USING btree ("Regio_ID");
+
+
+-- radar."Dates" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Dates";
+
+CREATE TABLE radar."Dates" (
+	"Recno" int4 DEFAULT 0 NULL,
+	"Omschrijving" varchar(12) NULL,
+	"Culturen" varchar(70) NULL,
+	"Datering" float8 NULL
+);
+
+
+-- radar."Hogere_planten" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Hogere_planten";
+
+CREATE TABLE radar."Hogere_planten" (
+	"Id" int4 NOT NULL,
+	"Soortnummer" varchar(255) NULL,
+	"Groepnummer" varchar(255) NULL,
+	"Wetenschappelijke naam" varchar(255) NULL,
+	"Auteursnaam" varchar(255) NULL,
+	"Nederlandse naam" varchar(255) NULL,
+	"Systematisch niveau" varchar(255) NULL,
+	"Status" varchar(255) NULL,
+	"Standaardlijst 1996" varchar(255) NULL,
+	"Familienummer" varchar(255) NULL,
+	"Familienaam" varchar(255) NULL,
+	"Genus" varchar(255) NULL,
+	"Soort" varchar(255) NULL,
+	"Ondersoort" varchar(255) NULL,
+	"Flora Faunawet" varchar(255) NULL,
+	"Doelsoort" varchar(255) NULL,
+	"Soortbescherming" varchar(255) NULL,
+	"Rode Lijst" varchar(255) NULL,
+	"Rode Lijst uitgebreid" varchar(255) NULL,
+	"Rode Lijst oud" varchar(255) NULL,
+	"Rode Lijst opm oud" varchar(255) NULL,
+	"Habitatrichtlijn 1" varchar(255) NULL,
+	"Habitatrichtlijn 2" varchar(255) NULL,
+	"Conventie van Bern" varchar(255) NULL,
+	"Rode Lijst Europa" varchar(255) NULL,
+	"Flora 1996" varchar(255) NULL,
+	"UFK 1940" varchar(255) NULL,
+	"UFK 1990" varchar(255) NULL,
+	"Uurhok norm 1950" varchar(255) NULL,
+	"Uurhok norm 1980" varchar(255) NULL,
+	"Atlas" varchar(255) NULL,
+	"Uurhok vari 1950" varchar(255) NULL,
+	"Uurhok vari 1980" varchar(255) NULL,
+	"Herkomst 1" varchar(255) NULL,
+	"Herkomst 2" varchar(255) NULL,
+	"Herkomst 3" varchar(255) NULL,
+	"Standaardlijst Belgie" varchar(255) NULL,
+	"Laatste waarneming" varchar(255) NULL,
+	"Areaalligging" varchar(255) NULL,
+	"Voorkomen M Europa" varchar(255) NULL,
+	"Voorkomen N Europa" varchar(255) NULL,
+	"Voorkomen W Europa" varchar(255) NULL,
+	"Voorkomen O Europa" varchar(255) NULL,
+	"Voorkomen ZO Europa" varchar(255) NULL,
+	"Voorkomen Z Europa" varchar(255) NULL,
+	"Voorkomen Holarctis" varchar(255) NULL,
+	"Voorkomen Amerika" varchar(255) NULL,
+	"Voorkomen Europa" varchar(255) NULL,
+	"Voorkomen Azië" varchar(255) NULL,
+	"Bron Geogr 1" varchar(255) NULL,
+	"Bron Geogr 2" varchar(255) NULL,
+	"Bron Geogr 3" varchar(255) NULL,
+	"Bron Geogr 4" varchar(255) NULL,
+	"Noot Geogr 0" varchar(255) NULL,
+	"Noot Geogr 1" varchar(255) NULL,
+	"Hoogtegordel" varchar(255) NULL,
+	"Noot Geogr 2" varchar(255) NULL,
+	"Noot Geogr 3" varchar(255) NULL,
+	"Noord Zuid as" varchar(255) NULL,
+	"Oost West as" varchar(255) NULL,
+	"Oecologische groep" varchar(255) NULL,
+	"Ecologische groep" varchar(255) NULL,
+	"Ecotoop 1" varchar(255) NULL,
+	"Ecotoop 2" varchar(255) NULL,
+	"Ecotoop 3" varchar(255) NULL,
+	"Ecotoop 4" varchar(255) NULL,
+	"Ecotoop 5" varchar(255) NULL,
+	"Ecotoop 6" varchar(255) NULL,
+	"Ecotoop 7" varchar(255) NULL,
+	"Ecotoop 10" varchar(255) NULL,
+	"Ecotoop 8" varchar(255) NULL,
+	"Ecotoop 9" varchar(255) NULL,
+	"Ecotoop amplitudo" varchar(255) NULL,
+	"Vegetatie Ellenberg" varchar(255) NULL,
+	"Vegetatie Westhoff" varchar(255) NULL,
+	"Vegetatie Westhoff*" varchar(255) NULL,
+	"Bestuiving 1" varchar(255) NULL,
+	"Bestuiving 2" varchar(255) NULL,
+	"Bestuiving 3" varchar(255) NULL,
+	"Zelfbestuiving" varchar(255) NULL,
+	"Carnivoor" varchar(255) NULL,
+	"Wortelknolletje" varchar(255) NULL,
+	"Levensvorm 1" varchar(255) NULL,
+	"Groeivorm simpel" varchar(255) NULL,
+	"Levensvorm 2" varchar(255) NULL,
+	"Levensvorm 3" varchar(255) NULL,
+	"Groeivorm 1" varchar(255) NULL,
+	"Anatom bouw 1" varchar(255) NULL,
+	"Groeivorm 2" varchar(255) NULL,
+	"Groeivorm 3" varchar(255) NULL,
+	"Anatom bouw 2" varchar(255) NULL,
+	"Hoogte min" varchar(255) NULL,
+	"Hoogte max" varchar(255) NULL,
+	"Bladseizoen" varchar(255) NULL,
+	"Hoogte extreem" varchar(255) NULL,
+	"Stekels doornen" varchar(255) NULL,
+	"Bladvorm" varchar(255) NULL,
+	"Bloem geslacht" varchar(255) NULL,
+	"Worteldiepte 1" varchar(255) NULL,
+	"Worteldiepte 2" varchar(255) NULL,
+	"Bloemkleur 1" varchar(255) NULL,
+	"Bloemkleur 2" varchar(255) NULL,
+	"Bloemkleur 3" varchar(255) NULL,
+	"Bloemkleur*" varchar(255) NULL,
+	"Vruchttype" varchar(255) NULL,
+	"Vruchtkleur" varchar(255) NULL,
+	"Zaadvorm" varchar(255) NULL,
+	"Chromosoomgetal" varchar(255) NULL,
+	"Levensduur 1" varchar(255) NULL,
+	"Levensduur*" varchar(255) NULL,
+	"Levensduur 2" varchar(255) NULL,
+	"Monocarp" varchar(255) NULL,
+	"Kiemtijd 1" varchar(255) NULL,
+	"Kiemtijd*" varchar(255) NULL,
+	"Kiemtijd 2" varchar(255) NULL,
+	"Kiemtijd?" varchar(255) NULL,
+	"Begin bloei" varchar(255) NULL,
+	"Eind bloei" varchar(255) NULL,
+	"Begin vrucht" varchar(255) NULL,
+	"Eind vrucht" varchar(255) NULL,
+	"Grondwater" varchar(255) NULL,
+	"Stroming Min" varchar(255) NULL,
+	"Stroming Max" varchar(255) NULL,
+	"Stroming Extr" varchar(255) NULL,
+	"Vocht Min" varchar(255) NULL,
+	"Vocht Max" varchar(255) NULL,
+	"Voedsel Min" varchar(255) NULL,
+	"Voedsel Max" varchar(255) NULL,
+	"Zuurgraad Min" varchar(255) NULL,
+	"Zuurgraad Max" varchar(255) NULL,
+	"Zout Min" varchar(255) NULL,
+	"Zout Max" varchar(255) NULL,
+	"Zink" varchar(255) NULL,
+	"Licht Min" varchar(255) NULL,
+	"Gebruik 1" varchar(255) NULL,
+	"Licht Max" varchar(255) NULL,
+	"Licht*" varchar(255) NULL,
+	"Gebruik 2" varchar(255) NULL,
+	"Duitse naam" varchar(255) NULL,
+	"Gebruik 3" varchar(255) NULL,
+	"Gebruik 4" varchar(255) NULL,
+	"Engelse naam" varchar(255) NULL,
+	"Franse naam" varchar(255) NULL,
+	CONSTRAINT sys_pk_10785 PRIMARY KEY ("Id")
+);
+CREATE INDEX "HOGERE_PLANTEN_RODE LIJST UITGEBREID" ON radar."Hogere_planten" USING btree ("Rode Lijst uitgebreid");
+CREATE INDEX hogere_planten_chromosoomgetal ON radar."Hogere_planten" USING btree ("Chromosoomgetal");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10785_10786 ON radar."Hogere_planten" USING btree ("Id");
+
+
+-- radar."Id_level" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Id_level";
+
+CREATE TABLE radar."Id_level" (
+	"Id_level" varchar(5) NOT NULL,
+	"Description" varchar(50) NULL,
+	CONSTRAINT sys_pk_10790 PRIMARY KEY ("Id_level")
+);
+CREATE INDEX id_level_id_level ON radar."Id_level" USING btree ("Id_level");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10790_10791 ON radar."Id_level" USING btree ("Id_level");
+
+
+-- radar."Onderdelen van Schakelbord" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Onderdelen van Schakelbord";
+
+CREATE TABLE radar."Onderdelen van Schakelbord" (
+	"SwitchboardID" int4 DEFAULT 0 NOT NULL,
+	"ItemNumber" int2 DEFAULT 0 NOT NULL,
+	"ItemText" varchar(255) NULL,
+	"Command" int2 DEFAULT 0 NULL,
+	"Argument" varchar(50) NULL,
+	CONSTRAINT sys_pk_10796 PRIMARY KEY ("SwitchboardID", "ItemNumber")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10796_10797 ON radar."Onderdelen van Schakelbord" USING btree ("SwitchboardID", "ItemNumber");
+
+
+-- radar."Parts" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Parts";
+
+CREATE TABLE radar."Parts" (
+	"Part preserved" varchar(3) NOT NULL,
+	"Description" varchar(30) NULL,
+	CONSTRAINT sys_pk_10801 PRIMARY KEY ("Part preserved")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10801_10802 ON radar."Parts" USING btree ("Part preserved");
+
+
+-- radar."Plakfouten" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten";
+
+CREATE TABLE radar."Plakfouten" (
+	f1 float8 NULL,
+	f2 varchar(255) NULL,
+	f3 varchar(255) NULL,
+	f4 varchar(255) NULL,
+	f5 varchar(255) NULL,
+	f6 float8 NULL,
+	f7 float8 NULL,
+	f8 float8 NULL,
+	f9 varchar(255) NULL,
+	f10 varchar(255) NULL
+);
+
+
+-- radar."Plakfouten ADC 2e ronde" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten ADC 2e ronde";
+
+CREATE TABLE radar."Plakfouten ADC 2e ronde" (
+	f1 float8 NULL,
+	f2 varchar(255) NULL,
+	f3 varchar(255) NULL,
+	f4 varchar(255) NULL,
+	f5 varchar(255) NULL,
+	f6 float8 NULL,
+	f7 float8 NULL,
+	f8 float8 NULL,
+	f9 varchar(255) NULL
+);
+
+
+-- radar."Plakfouten PLANTS ADC" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten PLANTS ADC";
+
+CREATE TABLE radar."Plakfouten PLANTS ADC" (
+	"Sample nr" int4 NULL,
+	"Name" varchar(255) NULL,
+	"Id_level" varchar(255) NULL,
+	"Part preserved" varchar(255) NULL,
+	"Pres mode" varchar(255) NULL,
+	"Quantification" float8 NULL,
+	"Min_numb" int4 NULL,
+	"Max_numb" int4 NULL,
+	"Remarks" varchar(255) NULL
+);
+
+
+-- radar."Plakfouten PLANTS BIAX nw" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten PLANTS BIAX nw";
+
+CREATE TABLE radar."Plakfouten PLANTS BIAX nw" (
+	"Sample nr" int4 NULL,
+	"Name" varchar(255) NULL,
+	"Id_level" varchar(255) NULL,
+	"Part preserved" varchar(255) NULL,
+	"Pres mode" varchar(255) NULL,
+	"Quantification" float8 NULL,
+	"Min_numb" int4 NULL,
+	"Max_numb" int4 NULL,
+	"Remarks" varchar(255) NULL,
+	biax_id varchar(255) NULL
+);
+
+
+-- radar."Plakfouten plants BIAX" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten plants BIAX";
+
+CREATE TABLE radar."Plakfouten plants BIAX" (
+	"Sample nr" int4 NULL,
+	"Name" varchar(255) NULL,
+	"Id_level" varchar(255) NULL,
+	"Part preserved" varchar(255) NULL,
+	"Pres mode" varchar(255) NULL,
+	"Quantification" float8 NULL,
+	"Min_numb" int4 NULL,
+	"Max_numb" int4 NULL,
+	"Remarks" varchar(255) NULL,
+	biax_id varchar(255) NULL
+);
+
+
+-- radar."Plakfouten sites ADC" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Plakfouten sites ADC";
+
+CREATE TABLE radar."Plakfouten sites ADC" (
+	"Report nr" int4 NULL,
+	"Site nr" int4 NULL,
+	"Plaats" varchar(255) NULL,
+	"Toponiem" varchar(255) NULL,
+	"X-coordinate" float8 NULL,
+	"Y-coordinate" float8 NULL,
+	"Archis wnr" float8 NULL,
+	"Archis omnr" varchar(255) NULL,
+	"Regio_ID" float8 NULL,
+	"Prov" varchar(255) NULL,
+	"Complextype" varchar(255) NULL,
+	"Cultural period" varchar(255) NULL,
+	"Begin date" varchar(255) NULL,
+	"End date" varchar(255) NULL,
+	"Remarks" varchar(255) NULL,
+	biax_id varchar(255) NULL
+);
+
+
+-- radar."Pres_mode" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Pres_mode";
+
+CREATE TABLE radar."Pres_mode" (
+	"Pres mode" varchar(255) NOT NULL,
+	"Description" varchar(255) NULL,
+	CONSTRAINT sys_pk_10821 PRIMARY KEY ("Pres mode")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10821_10822 ON radar."Pres_mode" USING btree ("Pres mode");
+
+
+-- radar."Sample_type" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Sample_type";
+
+CREATE TABLE radar."Sample_type" (
+	"Sample type" varchar(8) NOT NULL,
+	"Description" varchar(30) NULL,
+	CONSTRAINT sys_pk_10834 PRIMARY KEY ("Sample type")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10834_10835 ON radar."Sample_type" USING btree ("Sample type");
+
+
+-- radar."Site_type" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Site_type";
+
+CREATE TABLE radar."Site_type" (
+	"Site type code" varchar(12) NOT NULL,
+	"Description" varchar(50) NULL,
+	CONSTRAINT sys_pk_10853 PRIMARY KEY ("Site type code")
+);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10853_10854 ON radar."Site_type" USING btree ("Site type code");
+
+
+-- radar."Synonyms" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Synonyms";
+
+CREATE TABLE radar."Synonyms" (
+	"Synoniem" varchar(80) NULL,
+	"Naam in RADAR" varchar(80) NULL
+);
+
+
+-- radar."Taxa" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Taxa";
+
+CREATE TABLE radar."Taxa" (
+	"Name" varchar(80) NULL,
+	"Gebruiksplant" varchar(2) NULL,
+	"Nederlands" varchar(50) NULL,
+	"Nummer_code" float8 NULL,
+	"Engels" varchar(40) NULL,
+	"Duits" varchar(40) NULL
+);
+CREATE UNIQUE INDEX sys_idx_taxa_primarykey_10872 ON radar."Taxa" USING btree ("Name");
+CREATE INDEX taxa_numcode ON radar."Taxa" USING btree ("Nummer_code");
+
+
+-- radar."Taxa thesaurus ArnoldsvdM" definition
+
+-- Drop table
+
+-- DROP TABLE radar."Taxa thesaurus ArnoldsvdM";
+
+CREATE TABLE radar."Taxa thesaurus ArnoldsvdM" (
+	"Nummer_code" varchar(255) NULL,
+	regnum varchar(255) NULL,
+	phylum varchar(255) NULL,
+	klasse varchar(255) NULL,
+	orde varchar(255) NULL,
+	familie varchar(255) NULL,
+	"Name Thesauruslijst" varchar(255) NULL,
+	"Synoniem" varchar(255) NULL,
+	"Arnolds_VanderMaarel" varchar(255) NULL,
+	"Categorie gebruiksplant" varchar(255) NULL,
+	"Gebruiksplant/Houtig/Struik/Liaan" varchar(255) NULL,
+	"Nederlands" varchar(255) NULL,
+	"Veld12" varchar(255) NULL,
+	"Engels" varchar(255) NULL,
+	"Duits" varchar(255) NULL,
+	"Franse naam" varchar(255) NULL,
+	"Veld16" varchar(255) NULL
+);
+
+
+-- radar.halofyten_glycofyten definition
+
+-- Drop table
+
+-- DROP TABLE radar.halofyten_glycofyten;
+
+CREATE TABLE radar.halofyten_glycofyten (
+	"name" varchar(50) NULL,
+	haloglyco varchar(1) NULL
+);
+
+
+-- radar.reports definition
+
+-- Drop table
+
+-- DROP TABLE radar.reports;
+
+CREATE TABLE radar.reports (
+	"Author 1" varchar(101) NOT NULL,
+	"Jaar" float8 NULL,
+	"Artikel_titel" varchar(255) NOT NULL,
+	"Redactie" varchar(100) NULL,
+	"Boektitel" varchar(250) NULL,
+	"Plaats van uitgave" varchar(50) NULL,
+	"Status" varchar(1) NULL,
+	"URL of DOI" text NULL,
+	"Author 2" varchar(255) NULL,
+	"Author 3" varchar(255) NULL,
+	"Author 4" varchar(255) NULL,
+	"Author 5" varchar(255) NULL,
+	"Meer dan 5 auteurs" bool DEFAULT false NULL,
+	"Overige auteurs" varchar(255) NULL,
+	"Periodiek" varchar(255) NULL,
+	"Deel" varchar(255) NULL,
+	"Paginanummers" varchar(255) NULL,
+	"Uitgever" varchar(255) NULL,
+	"PDF bij Otto" bool DEFAULT false NULL,
+	"Plaatsingscode bibliotheek" varchar(255) NULL,
+	biax_id varchar(255) NULL,
+	"Publicatienummer" int4 DEFAULT 0 NOT NULL,
+	"Onderzoeksinstantie" text NULL,
+	"Onderzoeker" text NULL,
+	CONSTRAINT sys_pk_10826 PRIMARY KEY ("Publicatienummer")
+);
+CREATE INDEX reports_biax_id ON radar.reports USING btree (biax_id);
+CREATE UNIQUE INDEX sys_idx_sys_pk_10826_10827 ON radar.reports USING btree ("Publicatienummer");
+
+
+-- radar.westhoff definition
+
+-- Drop table
+
+-- DROP TABLE radar.westhoff;
+
+CREATE TABLE radar.westhoff (
+	"name" varchar(54) NULL,
+	westhoff varchar(3) NULL
+);
+
+
+-- radar.sites definition
+
+-- Drop table
+
+-- DROP TABLE radar.sites;
+
+CREATE TABLE radar.sites (
+	"Report nr" int4 NOT NULL,
+	"Plaats" varchar(45) NULL,
+	"Toponiem" varchar(45) NULL,
+	"X-coordinate" float8 NULL,
+	"Y-coordinate" float8 NULL,
+	"Archis wnr" float8 NULL,
+	"Regio_ID" float8 DEFAULT 0 NULL,
+	"Prov" varchar(15) NULL,
+	"Complextype" varchar(12) NULL,
+	"Cultural period" varchar(15) NULL,
+	"Begin date" varchar(6) NULL,
+	"End date" varchar(6) NULL,
+	"Remarks" varchar(3) NULL,
+	"Site nr" int4 DEFAULT 0 NOT NULL,
+	biax_id varchar(255) NULL,
+	"Archis zaaknr" varchar(255) NULL,
+	CONSTRAINT sys_pk_10859 PRIMARY KEY ("Site nr"),
+	CONSTRAINT "SITES_{D9DE3488-BE67-49CC-96B2-1ED2CE2EC52D}" FOREIGN KEY ("Regio_ID") REFERENCES radar."Archeoregio"("Regio_ID") ON UPDATE CASCADE,
+	CONSTRAINT sites_reportssites FOREIGN KEY ("Report nr") REFERENCES radar.reports("Publicatienummer") ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE UNIQUE INDEX "SYS_IDX_SITES_SITE NR_10866" ON radar.sites USING btree ("Site nr");
+CREATE INDEX "SYS_IDX_SITES_{D9DE3488-BE67-49CC-96B2-1ED2CE2EC52D}_10976" ON radar.sites USING btree ("Regio_ID");
+CREATE INDEX sites_archisid ON radar.sites USING btree ("Archis wnr");
+CREATE INDEX sites_biax_id ON radar.sites USING btree (biax_id);
+CREATE INDEX sys_idx_sites_reportssites_10968 ON radar.sites USING btree ("Report nr");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10859_10860 ON radar.sites USING btree ("Site nr");
+
+
+-- radar.features definition
+
+-- Drop table
+
+-- DROP TABLE radar.features;
+
+CREATE TABLE radar.features (
+	"Site nr" int4 NOT NULL,
+	"Feature nr" int4 NOT NULL,
+	"Feature type" varchar(20) NULL,
+	"Begin date" float8 NULL,
+	"End date" float8 NULL,
+	"Local phase" varchar(37) NULL,
+	"Cultural period" varchar(13) NULL,
+	biax_id varchar(255) NULL,
+	"Feature code" varchar(25) NULL,
+	"Remarks" varchar(255) NULL,
+	CONSTRAINT sys_pk_10778 PRIMARY KEY ("Feature nr"),
+	CONSTRAINT features_sitesfeatures FOREIGN KEY ("Site nr") REFERENCES radar.sites("Site nr") ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE UNIQUE INDEX "SYS_IDX_FEATURES_FEATURE NR_10771" ON radar.features USING btree ("Feature nr");
+CREATE INDEX features_biax_id ON radar.features USING btree (biax_id);
+CREATE INDEX sys_idx_features_sitesfeatures_10879 ON radar.features USING btree ("Site nr");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10778_10779 ON radar.features USING btree ("Feature nr");
+
+
+-- radar.samples definition
+
+-- Drop table
+
+-- DROP TABLE radar.samples;
+
+CREATE TABLE radar.samples (
+	"Feature nr" int4 NOT NULL,
+	"Sample nr" int4 NOT NULL,
+	"Sample type" varchar(8) NULL,
+	"Sample volume" varchar(10) NULL,
+	"Remarks" varchar(100) NULL,
+	"Sample code" varchar(50) NULL,
+	biax_id varchar(255) NULL,
+	CONSTRAINT sys_pk_10840 PRIMARY KEY ("Sample nr"),
+	CONSTRAINT samples_featuressamples FOREIGN KEY ("Feature nr") REFERENCES radar.features("Feature nr") ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT samples_sample_typesamples FOREIGN KEY ("Sample type") REFERENCES radar."Sample_type"("Sample type") ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE UNIQUE INDEX "SYS_IDX_SAMPLES_SAMPLE NR_10847" ON radar.samples USING btree ("Sample nr");
+CREATE INDEX samples_biax_id ON radar.samples USING btree (biax_id);
+CREATE INDEX sys_idx_samples_featuressamples_10950 ON radar.samples USING btree ("Feature nr");
+CREATE INDEX sys_idx_samples_sample_typesamples_10959 ON radar.samples USING btree ("Sample type");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10840_10841 ON radar.samples USING btree ("Sample nr");
+
+
+-- radar.plants definition
+
+-- Drop table
+
+-- DROP TABLE radar.plants;
+
+CREATE TABLE radar.plants (
+	"Sample nr" int4 NOT NULL,
+	"Name" varchar(80) NOT NULL,
+	"Id_level" varchar(5) NOT NULL,
+	"Part preserved" varchar(3) NOT NULL,
+	"Pres mode" varchar(1) NOT NULL,
+	"Quantification" float8 NOT NULL,
+	"Remarks" varchar(3) NULL,
+	"Min_numb" int4 NULL,
+	"Max_numb" int4 NULL,
+	biax_id varchar(255) NULL,
+	CONSTRAINT sys_pk_10810 PRIMARY KEY ("Sample nr", "Name", "Id_level", "Part preserved", "Pres mode"),
+	CONSTRAINT "PLANTS_{5539C0ED-F31A-4E24-9DBA-0F4C91B578B6}" FOREIGN KEY ("Id_level") REFERENCES radar."Id_level"("Id_level") ON UPDATE CASCADE,
+	CONSTRAINT "PLANTS_{66061C66-8E65-4F76-90FC-03D7B9909D85}" FOREIGN KEY ("Part preserved") REFERENCES radar."Parts"("Part preserved") ON UPDATE CASCADE,
+	CONSTRAINT "PLANTS_{BA3CF0BF-C8AC-4BD9-939A-62AAB4841F6D}" FOREIGN KEY ("Pres mode") REFERENCES radar."Pres_mode"("Pres mode") ON UPDATE CASCADE,
+	CONSTRAINT plants_samplesplants FOREIGN KEY ("Sample nr") REFERENCES radar.samples("Sample nr") ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT plants_taxaplants FOREIGN KEY ("Name") REFERENCES radar."Taxa"("Name") ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE INDEX "SYS_IDX_PLANTS_{5539C0ED-F31A-4E24-9DBA-0F4C91B578B6}_10887" ON radar.plants USING btree ("Id_level");
+CREATE INDEX "SYS_IDX_PLANTS_{66061C66-8E65-4F76-90FC-03D7B9909D85}_10899" ON radar.plants USING btree ("Part preserved");
+CREATE INDEX "SYS_IDX_PLANTS_{BA3CF0BF-C8AC-4BD9-939A-62AAB4841F6D}_10911" ON radar.plants USING btree ("Pres mode");
+CREATE INDEX plants_biax_id ON radar.plants USING btree (biax_id);
+CREATE INDEX sys_idx_plants_samplesplants_10924 ON radar.plants USING btree ("Sample nr");
+CREATE INDEX sys_idx_plants_taxaplants_10937 ON radar.plants USING btree ("Name");
+CREATE UNIQUE INDEX sys_idx_sys_pk_10810_10811 ON radar.plants USING btree ("Sample nr", "Name", "Id_level", "Part preserved", "Pres mode");

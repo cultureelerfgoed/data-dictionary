@@ -1,0 +1,27 @@
+table_catalog;table_schema;table_name;table_type;self_referencing_column_name;reference_generation;user_defined_type_catalog;user_defined_type_schema;user_defined_type_name;is_insertable_into;is_typed;commit_action
+gdm-bron-db;radar;Plakfouten plants BIAX;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Plakfouten sites ADC;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Site_type;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Synonyms;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Taxa thesaurus ArnoldsvdM;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;westhoff;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;halofyten_glycofyten;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;sites;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;reports;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Archeoregio;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;features;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;samples;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Akkeronkruiden Karl;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Dates;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Hogere_planten;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Onderdelen van Schakelbord;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Plakfouten;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Plakfouten ADC 2e ronde;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Plakfouten PLANTS ADC;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Plakfouten PLANTS BIAX nw;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Sample_type;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;plants;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Taxa;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Id_level;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Parts;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;radar;Pres_mode;BASE TABLE;None;None;None;None;None;YES;NO;None
