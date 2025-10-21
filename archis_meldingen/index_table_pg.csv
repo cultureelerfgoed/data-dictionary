@@ -1,0 +1,19 @@
+table_catalog;table_schema;table_name;table_type;self_referencing_column_name;reference_generation;user_defined_type_catalog;user_defined_type_schema;user_defined_type_name;is_insertable_into;is_typed;commit_action
+gdm-bron-db;archis_meldingen;bestand;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;aanvullend_onderzoek;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;auteur;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;bedreiging;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;bestands_link;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;deponering;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;geolocatie;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;gerelateerde_melding;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;legacy_literatuur;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;legacy_melding;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;melding;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;melding_object;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;onderzoeksmelding;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;onderzoeksrapport;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;uitstelverzoek;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;vindplaats;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;vondstmelding;BASE TABLE;None;None;None;None;None;YES;NO;None
+gdm-bron-db;archis_meldingen;waterbodem;BASE TABLE;None;None;None;None;None;YES;NO;None
