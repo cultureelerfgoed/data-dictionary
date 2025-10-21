@@ -1,8 +1,25 @@
-aside ul {
-    list-style-type: none;
+article.csv-list section.columns {
+    overflow-x: auto;
+    min-height: 200px;
+    max-height: (100vh - 170px);
 }
 
-aside li {
+article.csv-list section.columns ul {
+    column-width: 230px;
+    -webkit-column-width: 2;
+    -moz-column-width: 2;
+    max-height: calc(100vh - 380px);
+}
+
+
+article.csv-list ul {
+    list-style-type: none;
+    font-size: 12pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+article.csv-list li {
     display: flex;
     align-items: flex-start;
     vertical-align: middle; 
@@ -10,25 +27,30 @@ aside li {
     text-decoration: none;
 }
 
-aside li {
+article.csv-list li {
     display: flex;
     align-items: flex-start;
     vertical-align: middle; 
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    margin: 5px 5px 0px 5px;
+    width: 210px;
 }
 
-aside li[h1] {
+article.csv-list li[h1] {
     margin: 10px 10px 10px 10px;
     width: 210px; 
 }
 
-aside li[h1]::before {
+article.csv-list li[h1]::before {
     content: url(../icons/database.svg);
     width: 20px;
     height: 20px;
     margin-right: 2px;
 }
 
-aside li[h2] {
+article.csv-list li[h2] {
     margin: 10px 10px 10px 20px;
     width: 200px;
     overflow:hidden; 
@@ -36,70 +58,138 @@ aside li[h2] {
     text-overflow: ellipsis;
 }
 
-aside li[h2]::before {
+article.csv-list li[h2]::before {
     content: url(../icons/table.svg);
     width: 20px;
     height: 20px;
     margin-right: 4px;
 }
 
-aside li[h3] {
+article.csv-list li[h3] {
     margin: 10px 10px 10px 30px;
     width: 190px;   
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
 }
 
-aside li[h3]::before {
+article.csv-list li[h3]::before {
     content: url(../icons/column.svg);
     width: 20px;
     height: 20px;
     margin-right: 0px;
 }
 
-aside li a {
+article.csv-list li a {
     flex-grow: 2;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color:black;
+    color: #01689b;
     text-decoration: none;
 }
 
-aside li a:hover {
+article.csv-list li a:hover {
     text-decoration: underline;
 }
 
-aside li span {
+article.csv-list li span {
     margin-left: auto;
     justify-content: end;
     align-self: center;
-    font-size: 14px;   
+    font-size: 9pt;
+    line-height: 20px;
 }
 
-aside li span::before {
+article.csv-list li>span:first-of-type {
+    display: none;
+}
+
+article.csv-list li>span:last-of-type {
+    display: block;
+}
+
+article.csv-list li>span:last-of-type::before {
     content: '[';
+    font-size: 11pt;
 }
 
-aside li span::after {
+article.csv-list li>span:last-of-type::after {
     content: ']';
+    font-size: 11pt;
+    
 }
 
-nav[filter-list] {
-    padding: 10px;
+article.csv-list button[sort=alpha-asc] {
+    background: transparent url("https://icons.getbootstrap.com/assets/icons/sort-alpha-down.svg") no-repeat center;
 }
 
-nav[filter-list] input {
-    width: 100%;
+article.csv-list button[sort=alpha-desc] {
+    background: transparent url("https://icons.getbootstrap.com/assets/icons/sort-alpha-down-alt.svg") no-repeat center;
+}
+
+article.csv-list button[sort=numeric-asc] {
+    background: transparent url("https://icons.getbootstrap.com/assets/icons/sort-numeric-down.svg") no-repeat center;
+}
+
+article.csv-list button[sort=numeric-desc] {
+    background: transparent url("https://icons.getbootstrap.com/assets/icons/sort-numeric-down-alt.svg") no-repeat center;
+}
+
+article.csv-list button[sort] {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+article.csv-list button[sort]:hover {
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+}
+
+article.csv-list button[sort]:active {
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+}
+
+article.csv-list button[sort][selected] {
+    background-color: #F8F8F8;
+    border: 1px solid #555;
+}
+
+article.csv-list button[sort][selected]:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #555;
+}
+
+article.csv-list header:empty {
+    display: none;
+}
+
+article.csv-list nav {
+    display: flex;
+    padding: 4px;
+    margin: 0px;
+    height:40px;
+    align-items: center;
+}
+
+article.csv-list input {
+    padding: 4px;
+    width: 210px;
     border: 1px solid #ddd;
     border-radius: 3px;
     height: 30px;
-    font-size: 14px;
-    
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
     
     border: 1px solid #555;
   
     padding: 5px;
-    padding-right: 30px;
-
+    
     background: transparent url("../icons/search.svg") no-repeat;
     background-position: right 5px bottom 5px;
     background-size: 20px 20px;
