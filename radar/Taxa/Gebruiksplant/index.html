@@ -22,8 +22,8 @@
         <span class="assistive" id="breadCrumbNavLabel">U bevindt zich hier:</span>
                 <a href="/data-dictionary/">Data Dictionary</a>
         <a href="/data-dictionary/radar/"><span aria-current="page">radar</span></a>
-        <a href="/data-dictionary/radar/SITES"><span aria-current="page">SITES</span></a>
-        <a href="/data-dictionary/radar/SITES/"><span aria-current="page"></span></a>
+        <a href="/data-dictionary/radar/Taxa"><span aria-current="page">Taxa</span></a>
+        <a href="/data-dictionary/radar/Taxa/Gebruiksplant"><span aria-current="page">Gebruiksplant</span></a>
     </nav>
     <div class="container">
         <aside>
@@ -35,19 +35,18 @@
                 </nav>
                 <section>
                     <ul csv-file="">
-                        <li h1><a href="/data-dictionary/beeldbank/">beeldbank</a><span></span><span>3</span></li>
+                        <li h1><a href="/data-dictionary/archis_meldingen/">archis_meldingen</a><span></span><span>18</span></li>
 
-<li h1><a href="/data-dictionary/archis_meldingen/">archis_meldingen</a><span></span><span>18</span></li>
+<li h1><a href="/data-dictionary/beeldbank/">beeldbank</a><span></span><span>3</span></li>
 
 <li h1><a href="/data-dictionary/boneinfo/">boneinfo</a><span>38</span></li>
 
 <li h1><a href="/data-dictionary/radar/">radar</a><span>31</span></li>
 
-    <li h2><a href="/data-dictionary/radar/SITES">SITES</a><span>17</span></li>
-    
+    <li h2><a href="/data-dictionary/radar/Taxa">Taxa</a><span></span></li>
+    <li h3><a href="/data-dictionary/radar/Taxa/Gebruiksplant">Gebruiksplant</a><span>4040</span></li>   
 
 <li h1><a href="/data-dictionary/sch_choi/">sch_choi</a><span></span><span>65</span></li>
-
 
                     </ul>
                 </section>
@@ -56,19 +55,20 @@
         </aside>
         <main style="max-width: 100%;">
             <!--<header>main header</header>-->          
-                        <article class="csv-table">
-                <header>
-                    <h1>SITES</h1>
-                </header>
+                        <article class="csv-list">
+                <header></header>
                 <nav>
-                    <button csv-file="/data-dictionary/radar/SITES/index.csv" selected>tabel</button>
-                    <button csv-file="/data-dictionary/radar/SITES/index_pg.csv">infoschema-table</button>
-                    <button download="" title="download csv bestand"></button>
+                    <button sort="alpha-asc" selected></button>
+                    <button sort="alpha-desc"></button>
+                    <button sort="numeric-asc"></button>
+                    <button sort="numeric-desc"></button>
+                    <input class="search" type="text" search placeholder="Type to search.....">
                 </nav>
-                <section class="sticky">
-                    <table csv-file=""></table>
+                <section class="columns">
+                    <ul csv-file="/data-dictionary/radar/Taxa/Gebruiksplant/index.csv">
+                    </ul>
                 </section>
-                <footer></footer>
+                <footer></footer> 
             </article>
             <!--<footer>main footer</footer>-->
         </main> 
