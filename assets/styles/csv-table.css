@@ -1,5 +1,6 @@
 article.csv-table {    
-    background-color: white;  
+    background-color: white;
+    max-height: calc(100vh - 210px);
 }
 
 section.sticky {

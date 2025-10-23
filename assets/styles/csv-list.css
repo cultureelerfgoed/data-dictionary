@@ -1,16 +1,15 @@
 article.csv-list section.columns {
     overflow-x: auto;
     min-height: 200px;
-    max-height: (100vh - 170px);
+    max-height: calc(100vh - 170px);
 }
 
 article.csv-list section.columns ul {
     column-width: 230px;
     -webkit-column-width: 2;
     -moz-column-width: 2;
-    max-height: calc(100vh - 380px);
+    max-height: calc(100vh - 210px);
 }
-
 
 article.csv-list ul {
     list-style-type: none;
@@ -89,8 +88,14 @@ article.csv-list li a {
     text-decoration: none;
 }
 
-article.csv-list li a:hover {
+article.csv-list li a[href]:hover {
+    text-decoration: none;
+    cursor: auto;
+}
+
+article.csv-list li a[href]:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 article.csv-list li span {
@@ -162,6 +167,14 @@ article.csv-list button[sort][selected] {
 article.csv-list button[sort][selected]:hover {
     background-color: #FFFFFF;
     border: 1px solid #555;
+}
+
+button[download] {
+    width: 32px;   
+    background: transparent url("../icons/filetype-csv.svg") no-repeat center;
+    background-color: #F8F8F8;
+    border: 1px solid #555;
+    margin-left: auto;
 }
 
 article.csv-list header:empty {
