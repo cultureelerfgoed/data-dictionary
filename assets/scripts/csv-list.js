@@ -81,23 +81,26 @@ function load_csv_list_data(list, path) {
             restults.data.map((data, index)=>{
                 let value_name = data[0];
                 let value_count_int = data[1];
-                let value_count_str = numberToHumanFormat(parseInt(data[1]));
-                let li = document.createElement('li');
-                let a = document.createElement('a');
-                let a_text = document.createTextNode(value_name);
-                a.appendChild(a_text)
-                let span_int = document.createElement('span');
-                let span_int_text = document.createTextNode(value_count_int);
-                span_int.appendChild(span_int_text);
+                console.log('value_count_int: ' + value_count_int)
+                if(value_count_int != '0' && value_count_int != undefined) {
+                    let value_count_str = numberToHumanFormat(parseInt(data[1]));
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    let a_text = document.createTextNode(value_name);
+                    a.appendChild(a_text)
+                    let span_int = document.createElement('span');
+                    let span_int_text = document.createTextNode(value_count_int);
+                    span_int.appendChild(span_int_text);
 
-                let span_str = document.createElement('span');
-                let span_str_text = document.createTextNode(value_count_str);
-                span_str.appendChild(span_str_text);
+                    let span_str = document.createElement('span');
+                    let span_str_text = document.createTextNode(value_count_str);
+                    span_str.appendChild(span_str_text);
 
-                li.append(a);
-                li.append(span_int);
-                li.append(span_str);
-                list.append(li);
+                    li.append(a);
+                    li.append(span_int);
+                    li.append(span_str);
+                    list.append(li);
+                }
             });
         }
     });
